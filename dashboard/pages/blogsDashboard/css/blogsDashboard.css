@@ -1,0 +1,17 @@
+/* Modal blog */
+
+.titulo-blog{
+  width: 160px;
+}
+
+.categoria span{
+  color: var(--corPrimaria);
+}
+
+.titulo span{
+  color: var(--corPrimaria);
+}
+
+table tbody tr td{
+  padding: .5rem;
+}

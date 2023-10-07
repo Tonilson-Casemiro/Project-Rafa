@@ -1,0 +1,110 @@
+body{
+  background-color: rgb(252, 252, 252);
+}
+
+.section-pedidosClient{
+  font-family: Poppins;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+
+h1{
+  /* font-weight: normal; */
+}
+
+h2{
+  margin-top: 1rem;
+}
+
+.user-name{
+  color: #df8758;
+  font-weight: bold;
+}
+
+.msg-alert{
+  background-color: var(--corSecundaria);
+  padding: .8rem .3rem;
+  color: white;
+  margin: 1.2rem 0;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+/* tabela */
+
+/* layout global para tabela da dashboard*/
+
+.container-table{
+  overflow-x: auto;
+  background-color: white;
+  padding: .5rem;
+  box-shadow: 1px 1px 5px rgba(226, 226, 226, 0.61); 
+  border-radius: 20px;
+}
+
+table{
+  width: 95%;
+  font-family: Poppins;
+  margin: auto;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
+  border-collapse: collapse;
+  background-color: white;
+  font-size: .8em;
+  
+  
+  
+}
+
+
+
+th{
+  padding: .7rem 0;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+  padding: 1rem .3rem;
+}
+
+
+
+
+tbody tr{
+  border-bottom: 1px solid lightgray;
+  transition: all .3s;
+}
+
+tbody tr:hover{
+  background-color: rgba(238, 236, 236, 0.301);
+}
+
+td{
+  text-align: center;
+  font-weight: bold;
+  padding: 1.2rem 1rem;
+}
+
+
+table tr i{
+  color: var(--corPrimaria);
+  font-size: .8rem;
+}
+
+table tr i.fa-solid{
+  color: var(--corPrimaria);
+  font-size: .8rem;
+}
+
+
+
+.container-dataClients{
+  margin-bottom: 4rem;
+}
+

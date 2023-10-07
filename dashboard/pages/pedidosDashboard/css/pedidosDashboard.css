@@ -1,0 +1,61 @@
+/* Modal ver pedidos */
+
+.overlay-modal-viewDetails.show{
+  
+}
+
+.overlay-modal-viewDetails.show .container-modal-viewDetails{
+  padding: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  top: 2rem;
+  overflow-y: auto;
+}
+
+/* .overlay-modal-viewDetails::-webkit-scrollbar{
+  width: 10px;
+  background-color: lightgray;
+}
+ 
+.overlay-modal-viewDetails::-webkit-scrollbar-thumb{
+  background-color: var(--corSecundaria);
+} */
+
+/* Modal ver detalhes do pedido */
+
+.overlay-modal-viewDetails .details-pedido{
+
+}
+
+.overlay-modal-viewDetails .details-pedido h4{
+  margin-bottom: 2rem;
+}
+
+.overlay-modal-viewDetails .details-pedido .about{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.overlay-modal-viewDetails .details-pedido p{
+  font-size: .9em;
+}
+
+.overlay-modal-viewDetails table{
+  width: 100%;
+}
+
+.overlay-modal-viewDetails table .th-produto{
+  text-align: left;
+}
+
+.overlay-modal-viewDetails table .nome-produto{
+  text-align: left;
+}
+
+
+
+/* dados da tabela */
+td{
+  padding: 1.2rem 1rem;
+}

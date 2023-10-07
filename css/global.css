@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+ /* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+ /* Fontes de Letras*/
+@font-face {
+  font-family: Raleway;
+  src: url(../bibliotecas/google-fontes/raleway/Raleway-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face{
+  font-family: Poppins;
+  src: url(../bibliotecas/google-fontes/Poppins/Poppins-ExtraLight.ttf) format(truetype);
+}
+
+@font-face{
+  font-family: Poppins-regular;
+  src: url(../bibliotecas/google-fontes/Poppins/Poppins-Regular.ttf) format(truetype);
+}
+
+
+ /* Variavéis para Cores */
+ :root{
+  --corPrimaria: #DB7137;
+  --corSecundaria: #252525;
+  --corTerciaria: #535353;
+ }
+
+ header{
+  font-family: Poppins;
+ }
+
+ footer{
+  font-family: Poppins;
+ }
+

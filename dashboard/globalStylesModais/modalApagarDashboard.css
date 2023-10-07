@@ -1,0 +1,116 @@
+/* Animacion scale for all modals */
+
+@keyframes animacionShowModal{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: translate(1);
+  }
+}
+
+
+/* Modal deslogar da dashboard */
+
+.overlay-modal-apagarDashboard{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-apagarDashboard.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-apagarDashboard.show .container-modal-apagarDashboard{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 500px;
+  border-radius: 5px;
+
+}
+
+.overlay-modal-apagarDashboard.show .container-modal-apagarDashboard p{
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.overlay-modal-apagarDashboard.show  .container-exclamacionMark{
+  margin: auto;
+  margin-top: .3rem;
+  border: 4px solid red;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 50px;
+  height: 45px;
+  position: relative;
+}
+
+.overlay-modal-apagarDashboard.show .container-exclamacionMark span{
+  color: red;
+  font-size: 1.7em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+}
+
+.overlay-modal-apagarDashboard.show .container-buttons-modal-apagarDashboard{
+
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-modal-apagarDashboard.show button{
+  border: none;
+  padding: .5rem 1.5rem;
+  background-color: var(--corSecundaria);
+  color: white;
+  font-weight: bold;
+  transition: all .3s;
+  border-radius: 5px;
+}
+
+.overlay-modal-apagarDashboard.show button:hover{
+  background-color: var(--corPrimaria);
+  
+}
+
+@media(max-width:540px){
+  .overlay-modal-apagarDashboard.show .container-modal-apagarDashboard{
+    width: 90%;
+  }
+  
+}
+
+@media(max-width:440px){
+  .overlay-modal-apagarDashboard.show .container-modal-apagarDashboard{
+    height: 110px;
+  }
+
+  .overlay-modal-apagarDashboard.show .container-modal-apagarDashboard p{
+    width: 85%;
+  }
+
+  .container-buttons-modal-apagarDashboard{
+    margin-bottom: .5rem;
+  }
+
+  .overlay-modal-apagarDashboard.show button{
+    
+  }
+}

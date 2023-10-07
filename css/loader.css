@@ -1,0 +1,31 @@
+
+#preloader{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+}
+
+.loading{
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(231, 218, 218);
+  border-left-color: var(--corPrimaria);
+  border-radius: 50%;
+  animation: loading 1.5s infinite ease-in-out;
+  position: absolute;
+  top: 45%;
+  left: 47%;
+  transform: translate(-50%,-50%);
+  z-index: 1000;
+}
+
+@keyframes loading{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

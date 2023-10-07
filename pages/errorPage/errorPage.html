@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Page</title>
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="../../bibliotecas/fontawesome-free-6.4.0-web/css/all.min.css">  
+
+  <!--Css import-->
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/loader.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/btnBackToTop.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/sectionReferencePage.css">
+  <link rel="stylesheet" href="../../css/modalSearch.css">
+  <link rel="stylesheet" href="errorPage.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loading"></div>
+  </div>
+
+
+
+  <!--Header ou Cabeçalho do site-->
+  <header>
+    <!--First content header-->
+    <div class="container-content-top">
+      <div id="container-first-content-top">
+        <p>
+          <img src="" alt="">
+          <span id="span1-content-top">Buy</span>
+          <span id="span2-content-top">Online</span>
+        </p>
+      </div>
+      <div id="container-second-content-top">
+        <div>
+          <img src="../../assets/icones/telephone.png" alt="" style="width:15px;">
+          <p>924182273</p>
+        </div>
+        <div>
+          <img src="../../assets/icones/location.png" alt="" style="width:15px;">
+          <p>Luanda, Benfica - Angomart</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Menu de navegação-->
+    <nav class="navigation-area" id="nav">
+      
+      <!-- icone hamburguer -->
+      <img src="../../assets/icones/hamburger.png" id="open-menu" class="toggle" >
+
+      <!-- Logotipo -->
+      <a href="../../index.html" id="logo" > Loja</a>
+
+      <!-- Itens de Menu de Navegação -->
+      <ul id="list-itens-menu">
+        <li class="item-menu">
+          <a href="../../index.html" rel="next">Home</a>
+        </li>
+        <li class="item-menu">
+          <a href="../about_us/about_us.html" rel="next">About Us</a>
+        </li>
+        <li class="item-menu">
+          <a href="#" rel="next">Products</a>
+        </li>
+        <li class="item-menu">
+          <a href="../services/services.html" rel="next">Services</a>
+        </li>
+        <li class="item-menu">
+          <a href="../blog/blog.html" rel="next">Blogs</a>
+        </li>
+        <li class="item-menu">
+          <a href="../contacts/contacts.html" rel="next">Contacts</a>
+        </li>
+        <li class="li-container-btn-login">
+          <a href="../login/login.html" id="container-btn-login-li">
+            <span>Login</span>
+            <img src="../../assets/icones/login.png" alt="">
+          </a>
+        </li>
+        
+      </ul>
+
+      <!-- Area dos itens de Menu no fim a direita do header -->
+      <div class="container-itensMenu-end">
+        <!-- Area dos icones ou imagens de input -->
+        <div id="container-search" >
+          <img src="../../assets/icones/search-interface-symbol.png" class="icons-search-header" id="btn-search-black">
+          <img src="../../assets/icones/search-white.png" class="icon-nav-white icons-search-header" id="btn-search-white">
+        </div>
+        <!-- Area do icone de carrinho e número de produtos selecionados  -->
+        <a class="container-icon-carrinho-header">
+          <img src="../../assets/icons header/shopping-cart.png" alt="" width="30px">
+          <div class="number-products-carrinho">0</div>
+        </a>
+        <!-- Botão de Login -->
+        <a href="../login/login.html" id="container-btn-login">
+          <span>Login</span>
+          <img src="../../assets/icones/login.png" alt="" width="18px">
+        </a>
+      </div>
+
+      <!-- Icone close-menu -->
+      <img src="../../assets/icones/close (1).png" id="close-menu" class="toggle">
+      <!-- Overlay -->
+      <div id="camada-escura"></div>
+    </nav>
+    <!-- container de carrinho vazio -->
+    <div class="container-info-carrinhoEmpty">
+      <p>Sem itens no carrinho</p>
+    </div>
+
+  </header>
+
+  <main>
+
+
+    <!-- Modal da pesquisa de produtos -->
+    <div class="overlay-modal-search ">
+      <div class="modal-search">
+        <img src="../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-search">
+        <div class="container-input-search-modal">
+          <input type="text" placeholder="Search Products Here">
+          <a href="#" class="container-btn-search-modal">
+            <button>Pesquisar</button>
+          </a>
+          <!-- <img src="assets/icones/search-interface-symbol.png" alt="" width="22px"> -->
+        </div>
+      </div>
+    </div>    
+
+
+    <!-- Section img and reference page - header -->
+    <section id="section1" class="section-RefPage">
+      <div class="background-transparent"></div>
+      <img src="../../assets/about_us/pexels-fauxels-3184419.jpg" alt="" class="img-refPage">
+      <div class="container-infoRefPage">
+        <span id="pageName">Error Page</span>
+        <div class="container-referencePage">
+          <a href="../../index.html">
+            <span>Home</span>
+          </a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span>Error Page</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informação sobre a pagina não encontrada -->
+    <section class="section-info-errorPage">
+      <div class="container-info-errorPage">
+        <span id="numberErroPage">404</span>
+        <p id="alertErrorPage">Desculpa, não conseguimos encontrar essa página.</p>
+        <p id="whyErrorPage">Isso normalmente acontece quando você tenta acessar uma pagina nossa com URL errada.</p>
+        <a href="../../index.html">
+          <span>Back to Home</span>
+          <img src="../../assets/icones/right-arrow (1).png" alt="" width="20px">
+        </a>
+      </div>
+      <div class="container-img-product-errorPage">
+        <img src="../../assets/errorPage/404.png" alt="">
+      </div>
+    </section>
+
+
+
+    <!-- botão subir para o topo -->
+    <a href="#"  class="container-icon-back-to-top">
+      <img src="../../assets/icones/up-arrow.png" alt="" class="icon-back-to-top">
+    </a>
+  </main>  
+
+  
+  <footer>
+    <div class="container-sections-footer">
+      <div class="section1-Footer">
+        <p class="title">Contact us</p>
+        <div class="container-contact-us">
+          <div class="container-contact-us-info">
+            <img src="../../assets/icons Footer/location.png" alt="" class="icon-footer">
+            <p>Benfica -Rua do AngoMart</p>
+          </div>
+          <div class="container-contact-us-info">
+            <img src="../../assets/icons Footer/telephone.png" alt="" class="icon-footer">
+            <p>+244 924 182 273</p>
+          </div>
+          <div class="container-contact-us-info">
+            <!-- <img src="assets/icons Footer/email.png" alt="" class="icon-footer"> -->
+            <p class="aroba">@</p>
+            <p>loja@gmail.com</p>
+          </div>
+        </div>
+        
+      </div>
+  
+      <div class="section2-Footer">
+        <p class="title">Loja</p>
+        <p class="info-about-site">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio autem nam accusamus vero porro distinctio atque ut, facere inventore quam id quas assumenda deleniti! Non numquam nulla quis maiores corporis.
+        </p>
+        <div class="container-icons-redesSociais">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="../../assets/icons Footer/facebook.png" alt="" class="icon-footer">
+          </a href="#">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="../../assets/icons Footer/linkedin.png" alt="" class="icon-footer">
+          </a href="#">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="../../assets/icons Footer/instagram.png" alt="" class="icon-footer">
+          </a href="#">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="../../assets/icons Footer/whatsapp.png" alt="" class="icon-footer">
+          </a href="#">
+        </div>
+  
+      </div>
+  
+      <div class="section3-Footer">
+        <p class="title">Working hours</p>
+        <div class="container-work-hours">
+          <div class="work-hours">
+            <span class="day-week">Mon - Fri: </span>
+            <span class="hours">7.00am - 6.00pm</span>
+          </div>
+          <div class="work-hours">
+            <span class="day-week">Sat: </span>
+            <span class="hours">7.00am - 6.00pm</span>
+          </div>
+          <div class="work-hours">
+            <span class="day-week">Sun: </span>
+            <span class="hours">7.00am - 6.00pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-last-conteudo-footer">
+      <div class="linha-rodape"></div>
+      <p class="last-text-footer">Esse site foi desenvolvido pela empresa TCHOSSY.</p>
+    </div>
+  </footer>
+  <!-- Scripts js -->
+
+  <!-- Script Loader  -->
+  <script src="../../js/loader.js"></script>
+
+  <!--script do header-->
+  <script src="../../js/header.js"></script>
+
+  <!-- script backToTop -->
+  <script src="../../js/btnBackToTop.js"></script>
+
+  <!-- Script Scroll Reveal -->
+  <script src="../../bibliotecas/scrollreveal.js"></script>
+
+  <!-- Script modal search -->
+  <script src="../../js/modalSearch.js"></script>
+
+
+  <!-- Script scroll reveal Error PAge-->
+  <script src="scrollRevealErrorPage.js"></script>
+
+
+</body>
+</html>

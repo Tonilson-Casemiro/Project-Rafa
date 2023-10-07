@@ -1,0 +1,22 @@
+/* Section Marca */
+
+/* carousel marcas ou parceiros */
+
+
+
+.slidesMarcas.owl-carousel .owl-stage{
+  display: flex;
+  align-items: center;
+
+}
+
+.slidesMarcas.owl-carousel .owl-item img{
+  width: 50%;
+  margin: auto;
+}
+
+.slidesMarcas .item{
+  width: 100%;
+  position: relative;
+
+}

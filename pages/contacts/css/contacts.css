@@ -1,0 +1,191 @@
+iframe{
+  margin-top: 6rem;
+  width: 100%;
+  padding: 0 .5rem;
+}
+
+/* Section  informação sobre nossos contactos*/
+
+.section-info-contactUs{
+  margin:6rem 0;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 3rem;
+  font-family: Raleway;
+}
+
+/* Conteúdo sobre encontrar-nos */
+
+.container-content-ourContacts{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border: 1;
+}
+
+.container-about-contactUs{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+#subject-contactUs{
+  font-size: 2.3em;
+  color: var(--corPrimaria);
+}
+
+#subject-contactUs span{
+  color: black;
+}
+
+.container-about-contactUs p{
+  line-height: 1.6em;
+
+}
+
+
+
+
+
+/* Endereço, Email, Localização */
+.container-findUs{
+
+}
+
+.container-info-to-findUs{
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  max-width: 250px;
+}
+
+.info-to-findUs{
+  display: flex;
+  gap: .7rem;
+  align-items: center;
+}
+
+.info-to-findUs .aroba{
+  font-size: 1.3em;
+  color: var(--corPrimaria);
+}
+
+.info-to-findUs img{
+  width: 20px;
+}
+
+
+
+/* Redes sociais */
+
+
+.container-redesSociais-contactUs{
+  display: flex;
+  gap: 1rem;
+  max-width: 300px;
+}
+
+.container-icon-redesSociais-contactUs{
+  border: 1.5px solid var(--corPrimaria);
+  border-radius: 50%;
+  padding: .4rem .5rem;
+  transition: all .3s;
+  width: 2rem;
+  height: 2rem;
+}
+
+.container-icon-redesSociais-contactUs:hover{
+  background-color: var(--corPrimaria);
+}
+
+/* icones redes sociais */
+.fa-brands{
+  color: black;
+}
+.container-icon-redesSociais-contactUs:hover .fa-brands{
+  color: white;
+}
+
+
+
+
+/* Formulario de mensagem */
+
+.form-send-message{
+  max-width: 550px;
+  padding: 0 .5rem;
+}
+
+#subject-form{
+  font-size: 1.8em;
+  margin-bottom: .7rem;
+}
+
+#about-required-field{
+  font-size: .9em;
+  margin-bottom: .8rem;
+}
+
+.form-send-message input{
+  padding: 1.4em;
+  padding-left: 0;
+  width: 100%;
+  margin-bottom: .7rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.container-two-inputs{
+  display: flex;
+  gap: .4rem;
+
+}
+
+
+.form-send-message textarea{
+  margin-top: .6rem;
+  width: 100%;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+#input-submit{
+  max-width: 200px;
+  background-color: var(--corPrimaria);
+  color: white;
+  transition: all .3s;
+  margin-top: .3rem;
+  font-weight: bold;
+}
+
+#input-submit:hover{
+  background-color: var(--corSecundaria);
+}
+
+
+@media(max-width: 1115px){
+  .section-info-contactUs{
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 1.5rem;
+  }
+
+
+}
+
+@media(max-width: 520px){
+  .section-info-contactUs{
+    padding: 0 .8rem;
+  }
+
+  #input-submit{
+    font-size: .8em;
+  }
+
+}

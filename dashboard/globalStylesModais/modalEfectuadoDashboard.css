@@ -1,0 +1,125 @@
+/* Modal produto já adicionado */
+
+.overlay-modal-efectuado{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-efectuado.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-efectuado.show .container-modal-efectuado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 400px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.overlay-modal-efectuado.show .close-modal-efectuado{
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+.overlay-modal-efectuado.show p{
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+}
+
+
+/* SVG */
+
+.overlay-modal-efectuado.show svg{
+  display: block;
+  margin: auto;
+
+}
+
+#check-group {
+  animation: 0.32s ease-in-out 1.03s check-group;
+  transform-origin: center;
+}
+
+#check-group #check {
+  animation: 0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+  stroke-dasharray: 0, 75px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#check-group #outline {
+  animation: 0.38s ease-in outline;
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+
+#check-group #white-circle {
+  animation: 0.35s ease-in 0.35s forwards circle;
+  transform: none;
+  transform-origin: center;
+}
+
+@keyframes outline {
+from {
+  stroke-dasharray: 0, 345.576px;
+}
+to {
+  stroke-dasharray: 345.576px, 345.576px;
+}
+}
+@keyframes circle {
+from {
+  transform: scale(1);
+}
+to {
+  transform: scale(0);
+}
+}
+@keyframes check {
+from {
+  stroke-dasharray: 0, 75px;
+}
+to {
+  stroke-dasharray: 75px, 75px;
+}
+}
+@keyframes check-group {
+from {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.09);
+}
+to {
+  transform: scale(1);
+}
+}
+
+@media(max-width:520px){
+  .overlay-modal-efectuado.show .container-modal-efectuado{
+    width: 80%;
+    height: 140px;
+  }
+
+  .overlay-modal-efectuado.show .container-modal-efectuado p{
+    top: 1.4rem;
+  }
+
+}
+

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Dashboard</title>
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="../../../bibliotecas/fontawesome-free-6.4.0-web/css/all.min.css"> 
+
+  <!-- Links css -->
+  <link rel="stylesheet" href="../../../css/global.css">  
+  <link rel="stylesheet" href="../../../css/loader.css">  
+ 
+  
+  <!-- css globais Dashboard -->
+  <link rel="stylesheet" href="../../globalStyles/globalDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/contentPageDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/menuLateralDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/contentTopDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/tablesDashboard.css">
+  <link rel="stylesheet" href="./css/homeDashboard.css">
+  
+  <!-- css modal deslogar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalDeslogarDashboard.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loading"></div>
+  </div>
+
+  <!-- Modal deslogar da dashboard -->
+  <div class="overlay-modal-deslogarDashboard">
+    <div class="container-modal-deslogarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-deslogarDashboard">
+      <p>Tem a certeza que quer Terminar Seccão!</p>
+      <div class="container-buttons-modal-deslogarDashboard">
+        <button>Sim</button>
+        <button>Não</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-menuLateral-content-Dashboard">
+
+    <div class="container-menuLateral show">
+
+      <!-- <div class="container-logo">
+        <span class="logotipoName">loja</span>
+      </div> -->
+
+      <div class="container-info-admin">
+        <div class="container-img-admin">
+          <img src="../../assets/minhas fotos/tonyperfil.jpg" alt="" class="img-admin">
+        </div>
+        <div class="container-info">
+          <p>Tonilson Casimiro</p>
+          <p>Administrador</p>
+        </div>
+      </div> 
+
+      <!-- itens de menu -->
+      <div class="container-itens-menu">
+          <a href="homeDashboard.html" class="item-menu">
+            <i class="fa-solid fa-home"></i>
+            <span>Home</span>
+          </a>
+
+          <a href="../clientsDashboard/clientsDashboard.html" class="item-menu">
+            <i class="fa-solid fa-users"></i>
+            <span>Clientes</span>
+          </a>
+
+          <a href="../productsDashboard/productDashboard.html" class="item-menu">
+            <i class="fa-solid fa-pump-soap"></i>
+            <span>Produtos</span>
+          </a>
+
+          <a href="../categoriasDashboard/categoriasDashboard.html" class="item-menu">
+            <i class="fa-solid fa-shapes"></i>
+            <span>Categorias</span>
+          </a>
+
+          <a href="../marcasDashboard/marcasDashboard.html" class="item-menu">
+            <i class="fa-solid fa-tags"></i>
+            <span>Marcas</span>
+          </a>
+
+          <a href="../pedidosDashboard/pedidosDashboard.html" class="item-menu">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Pedidos</span>
+          </a>
+
+          <a href="../blogsDashboard/blogsDashboard.html" class="item-menu">
+            <i class="fa-solid fa-blog"></i>
+            <span>Blogs</span>
+          </a>
+
+          <a href="../comprasDashboard/comprasDashboard.html" class="item-menu">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span>Compras</span>
+          </a>
+
+          <a href="../profileAdmin/profileAdmin.html" class="item-menu">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Account</span>
+          </a>
+
+      </div>
+
+
+    </div>
+
+    <div class="content-Dashboard">
+
+      <!-- container referencia da pagina, button menu mobile, upload button   -->
+      <div class="containerTop">
+        <div class="container-iconMenuMobile-refPage">
+          <!-- icone menu mobile -->
+          <i class="fa-solid fa-bars"></i>
+          <!-- referencia da pagina -->
+          <p class="ref-page">
+            <span class="pageName">Home</span>
+            <span class="contentAboutPage">Toda informação geral da aplicação.</span>
+          </p>
+        </div>
+        <!-- botão de deslogar -->
+        <button class="button-logout" onclick="abrirModalDeslogar()">Sair</button>
+      </div>
+
+      <!-- Cubos com informações de numeros de usuarios, pedidos, compras -->
+      <div class="container-dados-database">
+        <p>Resultados</p>
+        <div class="container-cubos-dados">
+          <!-- Cubo com dados -->
+          <div class="cubo-dados">
+            <di class="container-icon">
+              <i class="fa-solid fa-users"></i>
+            </di>
+            <div class="info">
+              <p class="about">Usuarios</p>
+              <p class="number">56</p>
+            </div>
+          </div>
+          <!-- Cubo com dados -->
+          <div class="cubo-dados">
+            <di class="container-icon">
+              <i class="fa-solid fa-pump-soap"></i>
+            </di>
+            <div class="info">
+              <p class="about">Produtos</p>
+              <p class="number">38</p>
+            </div>
+          </div>
+          <!-- Cubo com dados -->
+          <div class="cubo-dados">
+            <di class="container-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </di>
+            <div class="info">
+              <p class="about">Pedidos</p>
+              <p class="number">17</p>
+            </div>
+          </div>
+          <!-- Cubo com dados -->
+          <div class="cubo-dados">
+            <di class="container-icon">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+            </di>
+            <div class="info">
+              <p class="about">Compras</p>
+              <p class="number">28</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabela de compras e usuarios recentes -->
+      <div class="others-informacions">
+        <!-- loja -->
+        <div class="container-table-compras">
+          <!-- Tabela de compras feitas -->
+          <div class="container-table">
+            <div class="container-aboutTable-button">
+              <p>Compras recentes</p>
+              <a href="../comprasDashboard/comprasDashboard.html">View More</a>
+            </div>
+            <!-- Table -->
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i class="fa-solid fa-user"></i>
+                    <span>Cliente</span>
+                  </th>
+                  <th>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Data</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tonilson casimiro</td>
+                  <td>10-08-2023</td>
+                </tr>
+                <tr>
+                  <td>Rafael Pilartes</td>
+                  <td>15-08-2023</td>
+                </tr> 
+                <tr>
+                  <td>Victor Luís</td>
+                  <td>18-08-2023</td>
+                </tr>          
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Tabela de Usuarios cadastrados -->
+        <div class="container-table-users">
+          <div class="container-table">
+            <div class="container-aboutTable-button">
+              <p>Usuarios recentes</p>
+              <a href="../clientsDashboard/clientsDashboard.html">View More</a>
+            </div>
+            <!-- table -->
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <i class="fa-solid fa-image"></i>
+                    photo
+                  </th>
+                  <th>
+                    <i class="fa-solid fa-user"></i>
+                    Nome
+                  </th>
+                  <th>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                  </th>
+                  <th>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Telefone</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="../../assets/minhas fotos/tonyperfil.jpg" alt="">
+                  </td>
+                  <td>Tonilson Casimiro</td>
+                  <td>casimirotonilson1@gmail.com</td>
+                  <td>924182273</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../../assets/minhas fotos/rafael.jpg" alt="">
+                  </td>
+                  <td>Rafael Pilartes</td>
+                  <td>rafapilartes@gmail.com</td>
+                  <td>923414621</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="../../assets/minhas fotos/victor.jpg" alt="">
+                  </td>
+                  <td>Victor Luís</td>
+                  <td>victor@gmail.com</td>
+                  <td>923414621</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+
+  </div>
+
+  <!-- scripts -->
+
+  <!-- Loader -->
+  <script src="../../../js/loader.js"></script>
+
+  <!-- Scroll Reveal -->
+  <script src="../../../bibliotecas/scrollreveal.js"></script>
+  <script src="js/scrollRevealHomeDashboard.js"></script>
+
+  <!-- Menu lateral -->
+  <script src="../../globalScripts/menuLateralDashboard.js"></script>
+  <!-- Modal Deslogar -->
+  <script src="../../globalScriptsModais/modalDeslogarDashboard.js"></script>
+  <!-- script home -->
+  <script src="js/homeDashboard.js"></script>
+
+</body>
+</html>

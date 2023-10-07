@@ -1,0 +1,558 @@
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transition: all .3s;
+  z-index: 999;
+  box-shadow:  #11111157 .8px .8px 2px;
+
+}
+
+
+/* Estilização do primeiro conteudo no header*/
+.container-content-top{
+  background-color: var(--corSecundaria);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 2rem;
+  width: 100%;
+  transition: all .3s;
+ 
+}
+
+#container-first-content-top p{
+  display: flex;
+}
+#container-first-content-top p #span1-content-top{
+  font-weight: bold;
+  font-size: 1em;
+}
+#container-first-content-top p #span2-content-top{
+  color: var(--corPrimaria);
+  font-size: 1em;
+}
+
+#container-second-content-top{
+  display: flex;
+  gap: 2rem;
+}
+
+#container-second-content-top div{
+  display: flex;
+  gap: .7rem;
+  
+}
+
+#container-second-content-top p{
+  font-size: .8em;
+}
+
+.desaparecer{
+  display: none;
+}
+
+
+
+/* Navegação */
+
+nav.navigation-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem .5rem;
+}
+
+/* overlay do menu mobile */
+
+div#camada-escura{
+  display: none;
+}
+
+
+
+#open-menu{
+  display: none;
+  width:1.5em;
+}
+
+#container-icon-close{
+  display: none;
+}
+
+#close-menu{
+  display: none;
+  width:1.3em;
+}
+
+nav .icon-nav{
+  width: 1.4rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+
+#logo{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size:1.3em;
+  display: block;
+  margin-left: 3rem;
+  
+}
+
+ul#list-itens-menu{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  list-style: none;
+  transition: all .3s;
+  margin-left: 7rem;
+  
+}
+
+
+
+ul#list-itens-menu li:hover a{
+  color: var(--corPrimaria);
+}
+
+
+ul#list-itens-menu li.item-menu a::after{
+  display: block;
+  content: "";
+  background-color: var(--corPrimaria);
+  width: 0%;
+  height: .5px;
+  margin-top: .3rem;
+}
+
+ul#list-itens-menu li.item-menu a:hover:after{
+  width: 100%;
+}
+
+.icon-nav-white{
+  display: none;
+  width: 1.5rem;
+}
+
+#list-itens-menu li a{
+  display: block;
+  text-decoration: none;
+  color: var(--corSecundaria);
+  font-weight: bold;
+  font-size: 1em;
+  
+}
+
+/* Botão de login no menu mobile */
+
+.li-container-btn-login{
+  padding: .7rem 4rem;
+  background-color: var(--corPrimaria);
+  cursor: pointer;
+  transition: all .2s;
+  text-align: left;
+  display: none;
+}
+
+
+
+a#container-btn-login-li span{
+  color: white;
+}
+
+a#container-btn-login-li img{
+  width: 18px;
+}
+
+
+/* Container dos itens de Menu in right of header */
+
+.container-itensMenu-end{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 3rem;
+}
+
+#btn-search-black{
+  width: 1.3rem;
+}
+
+/* Carrinho no menu de nav */
+
+.container-icon-carrinho-header{
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.number-products-carrinho{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: var(--corPrimaria);
+  color: white;
+  padding: .1rem .2rem;
+  transform: translate(-1.5rem,-.6rem);
+}
+
+/* Estilo do container que informa sobre o carrinho vazio */
+
+.container-info-carrinhoEmpty{
+  display: none;
+  transition: all .3s;
+}
+
+.aparecercontainer-info-carrinhoEmpty{
+  display: block;
+  animation: animacaoAparecerInfoCarrinhoEmpty .4s ease-in-out;
+  position: fixed;
+  top: auto;
+  right: 0;
+  z-index: 888;
+  background-color: var(--corSecundaria);
+  padding: 2rem 5rem;
+  margin-top: .3rem;
+}
+
+.container-info-carrinhoEmpty p{
+  color: white;
+  font-size: .9em;
+}
+
+@keyframes animacaoAparecerInfoCarrinhoEmpty{
+  from{
+    transform: translatex(19rem);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+#btn-search-black:hover #input-pesquisar{
+  display: block;
+}
+
+/* Botão de login in the end header */
+
+#container-btn-login {
+  padding: .7rem 4rem;
+  border: 1px solid var(--corPrimaria);
+  transition: all .5s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  
+}
+
+a#container-btn-login{
+  text-decoration: none;
+}
+
+#container-btn-login span{
+  color: var(--corSecundaria); 
+  font-size: .9em;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+
+#container-btn-login:hover{
+  background-color: var(--corPrimaria);
+}
+
+#container-btn-login:hover span{ 
+   color: white;
+}
+
+
+
+
+
+
+/* Menu Mobile */
+
+@media(max-width: 1274px){
+
+  /* Infomacões no topo */
+  div.container-content-top{
+    display: none;
+  }
+
+  /* Container Nav */
+  nav.navigation-area{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  /* Area dos itens de Menu do End header */
+
+  .container-itensMenu-end{
+    flex-direction: row-reverse;
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+
+  #container-btn-login button{
+    display: none;
+  }
+
+  /* Menu.show */
+
+  .removeOverflow{
+    overflow: hidden;
+  }
+
+  #logo{
+    color: white;
+  }
+
+  nav.show #logo{
+    font-weight: normal;
+    margin-left: 1.5rem;
+    display: block;
+  }
+
+  nav.show #logo{
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    z-index: 1000;
+    color: white;
+    font-size: 1.5em;
+  }
+
+
+  
+  .animacaoMenuMobile{
+    animation: animacaoMenuMobile .7s ease-in-out;
+  }
+
+  @keyframes animacaoMenuMobile{
+    from{
+      transform: translateX(-400px);
+    }
+    to{
+      transform: translateX(0);
+    }
+  }
+
+
+
+  nav.show ul#list-itens-menu{
+    display: flex;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--corSecundaria);
+    width: 24rem;
+    height: 100vh;
+    z-index: 999;
+    padding-top: 8rem;
+    align-items: baseline;
+    margin-left: 0;
+    flex-direction: column;
+    color: white;
+  
+    
+  }
+
+  .li-container-btn-login{
+    display: block;
+  }
+
+  nav.show #container-btn-login-li{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  nav.show ul#list-itens-menu li{
+    margin-left: 2rem;
+  }
+
+  nav.show ul#list-itens-menu li a{
+    font-size: 1em;
+    color: white;  
+  }
+
+
+  
+
+  nav.show #camada-escura{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all .3s;
+    background-color: #252525b2;
+    
+  }
+
+  nav.show #list-itens-menu li a{
+    color: white;
+    font-size: 1.1em;
+    
+  }
+
+  nav.show #list-itens-menu li:hover a{
+    color: var(--corPrimaria);
+  }
+
+
+  nav.show .open-menu{
+    width:1.5em;
+
+  }
+
+  nav.show #close-menu{
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 25rem;
+    background-color: var(--corSecundaria);
+    width: 1em;
+    transition: all .4s;
+    z-index: 999;
+  }
+
+  nav.show  button{
+    background-color:  var(--corPrimaria);
+  }
+
+  #container-content-top{
+    display: none;
+  } 
+
+
+  nav ul#list-itens-menu {
+   display: none;
+   
+  }
+  
+  nav .icon-nav-black{
+    display: block;
+    width: 1.9em;
+  }
+
+  #btn-search-black{
+    display: none;
+  }
+
+  
+  .icon-nav-white{
+  display: block;
+  }
+
+  #container-btn-login{
+    display: none;
+  }
+
+  
+  nav.navigation-area{    
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--corSecundaria);
+  }
+
+  #open-menu{
+    display: block;
+  }
+
+
+  /* Aparecer info de carrinho vazio */
+  /* .aparecercontainer-info-carrinhoEmpty{
+    top: 4rem;
+  } */
+  
+
+
+ 
+}
+
+@media(max-width: 600px){
+  #btn-search-white{
+    display: none;
+  }
+
+
+}
+
+@media(max-width: 500px){
+
+  @keyframes animacaoMenuMobile{
+    from{
+      transform: translateX(-20rem);
+    }
+    to{
+      transform: translate(0);
+    }
+  }
+
+
+  nav.show #logo{
+    top: 1rem;
+    left: .5rem;
+  }
+
+  nav.show ul#list-itens-menu{
+    z-index: 999;
+    width: auto;
+    height: auto;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin: 0;
+    background-color:  #25252500;
+    
+  }
+
+  nav.show ul#list-itens-menu li{
+    margin-left: 0;
+  }
+
+
+
+  nav.show #camada-escura{
+    background-color: var(--corSecundaria);
+
+    
+  }
+
+
+  #logo{
+    display: block;
+    margin-right: 1rem;
+  }
+
+  nav.show #close-menu{
+    position: fixed;
+    top: 1.4rem;
+    left: inherit;
+    right: 1rem;
+  }
+
+
+  
+  
+}
+
+

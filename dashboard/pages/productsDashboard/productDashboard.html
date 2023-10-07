@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos Dashboard</title>
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="../../../bibliotecas/fontawesome-free-6.4.0-web/css/all.min.css"> 
+
+  <!-- Links css -->
+  <link rel="stylesheet" href="../../../css/global.css">  
+  <link rel="stylesheet" href="../../../css/loader.css">  
+  <link rel="stylesheet" href="./css/productDashboard.css">
+
+  <!-- css globais Dashboard -->
+  <link rel="stylesheet" href="../../globalStyles/globalDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/menuLateralDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/contentTopDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/contentPageDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/btn-cadastrar-pesquisa.css">
+  <link rel="stylesheet" href="../../globalStyles/tablesDashboard.css">
+
+  <!-- Modais -->
+  <!-- css modal deslogar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalDeslogarDashboard.css">
+  <!-- css modal cadastrar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalCadastrar.css">
+  <!-- css modal editar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalEditarDashboard.css">
+  <!-- css modal apagar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalApagarDashboard.css">
+  <!-- css modal efectuado -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalEfectuadoDashboard.css">
+  <!-- css modal detalhes -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalViewDetailsDashboard.css">
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loading"></div>
+  </div>
+
+  <!-- Modal deslogar da dashboard -->
+  <div class="overlay-modal-deslogarDashboard">
+    <div class="container-modal-deslogarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-deslogarDashboard">
+      <p>Tem a certeza que quer Terminar Seccão!</p>
+      <div class="container-buttons-modal-deslogarDashboard">
+        <button>Sim</button>
+        <button>Não</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal cadastrar usuario -->
+  <div class="overlay-modal-cadastrarDashboard">
+    <div class="container-modal-cadastrarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-cadastrarDashboard">
+      <form action="">
+        <div class="container-input">
+          <label for="nomeProduto">Nome do Produto</label>
+          <input type="text" placeholder="Nome" id="nomeProduto">
+        </div>
+        <div class="container-input">
+          <label for="categoria">Categoria do produto</label>
+          <input type="text" placeholder="categoria" id="categoria">
+        </div>
+        <div class="container-input">
+          <label for="marca">Marca do produto</label>
+          <input type="text" placeholder="Marca" id="telefone">
+        </div>
+        <div class="container-input">
+          <label for="detalhes">Detalhes do produto</label>
+          <textarea name="detalhes" id="detalhes" cols="30" rows="5">
+          </textarea>
+        </div>
+        <div class="container-input">
+          <input type="file">
+        </div>
+        <input type="submit" class="btn-submit" value="cadastrar" onclick="abrirModalEfectuado()">
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Modal apagar usuario-->
+  <div class="overlay-modal-apagarDashboard">
+    <div class="container-modal-apagarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-apagarDashboard">
+      <p>Tem a certeza que quer apagar esse produto!</p>
+      <div class="container-buttons-modal-apagarDashboard">
+        <button>Sim</button>
+        <button>Não</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal editar usuario -->
+  <div class="overlay-modal-editarDashboard">
+    <div class="container-modal-editarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-editarDashboard">
+      <form action="">
+        <div class="container-input">
+          <label for="nomeProduto">Nome do Produto</label>
+          <input type="text" placeholder="Nome" id="nomeProduto">
+        </div>
+        <div class="container-input">
+          <label for="categoria">Categoria do produto</label>
+          <input type="text" placeholder="categoria" id="categoria">
+        </div>
+        <div class="container-input">
+          <label for="marca">Marca do produto</label>
+          <input type="text" placeholder="Marca" id="telefone">
+        </div>
+        <div class="container-input">
+          <label for="detalhes">Detalhes do produto</label>
+          <textarea name="detalhes" id="detalhes" cols="30" rows="5">
+          </textarea>
+        </div>
+        <div class="container-input">
+          <input type="file">
+        </div>
+        <input type="submit" class="btn-submit" value="cadastrar" onclick="abrirModalEfectuado()">
+      </form>
+  
+
+    </div>
+  </div> 
+
+  <!-- Modal de ver detalhes -->
+  <div class="overlay-modal-viewDetails">
+    <div class="container-modal-viewDetails">
+      <img src="../../../assets/icones/close.png" alt="" class="close-modal-viewDetails">
+      <div class="container-details">
+        <div class="container-img">
+          <img src="../../../assets/produtos/section-bg-4.png" alt="" >
+          <div class="overlay-img-"></div>
+        </div>
+        <div class="details">
+          <p class="name">Vela caramelo de soja</p>
+          <p>
+            <span>Categoria</span>:
+            Velas
+          </p>
+          <p>
+            <span>Marca</span>:
+            Suave
+          </p>
+          <p class="preco">12000kz</p>
+          <p class="about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro temporibus quo voluptatum qui doloremque vitae est eligendi, doloribus facere accusantium molestiae ducimus eaque illo dolor, maiores, quaerat deleniti possimus consectetur!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum reiciendis blanditiis error velit. Ducimus explicabo fuga similique?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- efectuado -->
+  <div class="overlay-modal-efectuado">
+    <div class="container-modal-efectuado">
+      <img src="assets/icones/close.png" alt="" width="
+        12px" class="close-modal-efectuado">
+      <p>Efectuado!</p>
+      <svg
+          width="65px"
+          height="65px"
+          viewBox="0 0 133 133"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          
+        >
+          <g
+              id="check-group"
+              stroke="none"
+              stroke-width="1"
+              fill="#DB7137"
+              fill-rule="evenodd"
+          >
+                  <circle
+                  id="filled-circle"
+                  fill="#DB7137"
+                  cx="66.5"
+                  cy="66.5"
+                  r="54.5"
+              />
+              <circle
+                  id="white-circle"
+                  fill="#DB7137"
+                  cx="66.5"
+                  cy="66.5"
+                  r="55.5"
+              />
+              <circle
+                  id="outline"
+                  stroke="#DB7137"
+                  stroke-width="4"
+                  cx="66.5"
+                  cy="66.5"
+                  r="54.5"
+              />
+              <polyline
+                  id="check"
+                  stroke="#FFFFFF"
+                  stroke-width="5.5"
+                  points="41 70 56 85 92 49"
+              />
+          </g>
+      </svg>
+
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="container-menuLateral-content-Dashboard">
+
+    <div class="container-menuLateral show">
+
+      <div class="container-logo">
+        <img src="../../assets/icones menu/ecommerce.png" alt="">
+        <span class="logotipoName">Shopping</span>
+      </div>
+
+      <div class="container-info-admin">
+        <div class="container-img-admin">
+          <img src="../../assets/minhas fotos/tonyperfil.jpg" alt="" class="img-admin">
+        </div>
+        <div class="container-info">
+          <p>Tonilson Casimiro</p>
+          <p>Administrador</p>
+        </div>
+      </div>
+
+      <!-- itens de menu -->
+      <div class="container-itens-menu">
+        <a href="../homeDashboard/homeDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/home.png" alt="">
+          <span>Home</span>
+        </a>
+
+        <a href="../clientsDashboard/clientsDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/teamwork.png" alt="">
+          <span>Clientes</span>
+        </a>
+
+        <a href="./productDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/product.png" alt="">
+          <span>Produtos</span>
+        </a>
+
+        <a href="../categoriasDashboard/categoriasDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/categories.png" alt="">
+          <span>Categorias</span>
+        </a>
+
+        <a href="../marcasDashboard/marcasDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/tag (1).png" alt="">
+          <span>Marcas</span>
+        </a>
+
+        <a href="../pedidosDashboard/pedidosDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/exam.png" alt="">
+          <span>Pedidos</span>
+        </a>
+
+        <a href="../blogsDashboard/blogsDashboard.html" class="item-menu">
+          <!-- <i class="fa-solid fa-blog"></i> -->
+          <img src="../../assets/icones menu/writing.png" alt="" class="icone-blog">
+          <span>Blogs</span>
+        </a>
+
+        <a href="../comprasDashboard/comprasDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/money-bag.png" alt="">
+          <span>Compras</span>
+        </a>
+
+        <a href="../profileAdmin/profileAdmin.html" class="item-menu">
+          <img src="../../assets/icones menu/person.png" alt="">
+          <span>Account</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="content-Dashboard">
+
+      <!-- container referencia da pagina, button menu mobile, upload button   -->
+      <div class="containerTop">
+        <div class="container-iconMenuMobile-refPage">
+          <!-- icone menu mobile -->
+          <i class="fa-solid fa-bars"></i>
+          <!-- referencia da pagina -->
+          <p class="ref-page">
+            <span class="pageName">Produtos</span>
+            <span class="contentAboutPage">Todos produtos cadastrados na aplicação</span>
+          </p>
+        </div>
+        <!-- botão de deslogar -->
+        <button class="button-logout" onclick="abrirModalDeslogar()">Sair</button>
+      </div>
+
+      <!-- Botão cadastrar e Botão de pesquisa -->
+      <div class="container-buttonCadastrar-inputSearch">
+        <button class="button-cadastrar" onclick="abrirModalCadastrar()">
+          Cadastrar
+        </button>
+
+        <div class="input-search">
+          <label for="pesquisar">
+            <img src="../../assets/accoes/search-white.png" alt="" >
+          </label>
+          <input type="text" placeholder="pequise pelo nome" id="pesquisar">
+        </div>
+      </div>
+      
+      <!-- Tabela de produtos cadastrados -->
+      <div class="container-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Imagem</th>
+              <th>Nome</th>
+              <th>Categoria</th>
+              <th>Marca</th>
+              <th>Disponibilidade</th>
+              <th>Ver</th>
+              <th>Editar</th>
+              <th>Apagar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="../../../assets/produtos/product-5_1-540x540.jpg" alt="" class="img"></td>
+              <td>Vela caramelo de soja</td>
+              <td>Velas</td>
+              <td>Suave</td>
+              <td>
+                <select name="disponibilidade" id="disponibilidade">
+                  <option value="disponivel">Disponivél</option>
+                  <option value="Indisponivél">Indisponivél</option>
+                </select>
+              </td>
+              <td onclick="abrirModalViewDetails()">
+                <i class="fa-regular fa-eye"></i>
+              </td>
+              <td onclick="abrirModalEditar()">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+              <td onclick="abrirModalApagar()">
+                <i class="fa-regular fa-trash-can"></i>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      
+
+    </div>
+
+    
+
+  </div>
+
+  <!-- scripts -->
+
+  <!-- Loader -->
+  <script src="../../../js/loader.js"></script>
+
+  <!-- Menu lateral -->
+  <script src="../../globalScripts/menuLateralDashboard.js"></script>
+
+  <!-- Modais -->
+  <!-- Modal Deslogar -->
+  <script src="../../globalScriptsModais/modalDeslogarDashboard.js"></script>
+  <!-- Modal Cadastrar -->
+  <script src="../../globalScriptsModais/modalCadastrar.js"></script>
+  <!-- Modal Editar -->
+  <script src="../../globalScriptsModais/modalEditarDashboard.js"></script>
+  <!-- Modal Apagar -->
+  <script src="../../globalScriptsModais/modalApagarDashboard.js"></script>
+  <!-- Modal efectuado -->
+  <script src="../../globalScriptsModais/modalEfectuadoDashboard.js"></script>
+  <!-- Modal detalhes -->
+  <script src="../../globalScriptsModais/modalViewDetailsDashboard.js"></script>
+
+</body>
+</html>

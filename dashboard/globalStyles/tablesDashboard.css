@@ -1,0 +1,114 @@
+/* layout global para tabela da dashboard*/
+
+.container-table{
+  overflow-x: auto; 
+  background-color: white;
+  padding: .5rem;
+  box-shadow: 1px 1px 5px rgba(226, 226, 226, 0.61); 
+  border-radius: 20px;
+}
+
+table{
+  width: 95%;
+  font-family: Poppins;
+  margin: auto;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
+  border-collapse: collapse;
+  background-color: white;
+  font-size: .8em;
+}
+
+
+
+th{
+  padding: .7rem 0;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+  padding: 1rem .3rem;
+}
+
+
+
+
+tbody tr{
+  border-bottom: 1px solid lightgray;
+  transition: all .3s;
+}
+
+tbody tr:hover{
+  background-color: rgba(238, 236, 236, 0.301);
+}
+
+td{
+  text-align: center;
+  font-weight: bold;
+  /* padding: 1.2rem 1rem; */
+  margin: 0 1rem;
+}
+
+
+table i{
+  color: var(--corPrimaria);
+  font-size: .8rem;
+}
+
+/* imagens de operações no banco de dados */
+
+.accoes{
+  width: 20px;
+  cursor: pointer;
+}
+
+/* icone de olho */
+
+table i{
+  color: #db7037c7;
+  font-size: 1.3em;
+}
+
+/* imagem do produto cadastrado */
+
+table tbody tr .img{
+  width: 70px;
+}
+
+/* icone editar */
+.fa-pen-to-square{
+  color: var(--corPrimaria);
+  /* color: orange; */
+}
+
+/* icone deletar */
+.fa-trash-can{
+  color: red;
+}
+
+/* Text area dos modais cadastrar e editar */
+
+textarea{
+  outline: none;
+  resize: none;
+}
+
+table select{
+  border: none;
+  outline: none;
+}
+
+tbody tr td .container-img-table{
+  clip-path: circle();
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  position: relative;
+  margin: auto;
+}
+
+tbody tr td img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+

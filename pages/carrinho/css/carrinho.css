@@ -1,0 +1,165 @@
+
+
+
+table{
+  width: 90%;
+  font-family: Poppins;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-collapse: collapse;
+}
+
+
+th{
+  padding: .7rem 0;
+  border-bottom: 1px solid black;
+}
+
+th#produto{
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.preco-total{
+  color: var(--corPrimaria);
+}
+
+table .fa-solid{
+  color: black;
+  cursor: pointer;
+  color: rgb(156, 155, 155);
+}
+
+.quant-product .fa-solid{
+  background-color: rgb(245, 245, 245);
+  padding: .6rem;
+  transition: all .3s;
+}
+
+.quant-product .fa-solid:hover{
+  background-color: lightgray;
+}
+
+.quant-product .value{
+  margin: 0 .3rem;
+}
+
+#img-product-name{
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+#img-product-name img{
+  width: 60px;
+}
+
+tbody tr{
+  border-bottom: 1px solid lightgray;
+}
+
+td{
+  text-align: center;
+  font-weight: bold;
+  padding: .7rem 0;
+}
+
+#updateCart{
+  display: block;
+  padding: .8rem 1rem;
+  color: white;
+  background-color: var(--corSecundaria);
+  border: none;
+  transition: all .3s;
+  font-family: Poppins;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+#updateCart:hover{
+  background-color: var(--corPrimaria); 
+}
+
+#container-totalCart-encomenda{
+  display: flex;
+  justify-content: baseline;
+  gap: .5rem;
+  flex-direction: column;
+  font-family: Poppins;
+  font-weight: bold;
+  width: 300px;
+  margin-left: 4rem;
+}
+
+#container-totalCart-encomenda p#title{
+  font-size: 1.2em;
+}
+
+#container-totalCart-encomenda p span{
+  color: var(--corPrimaria);
+}
+
+
+#container-totalCart-encomenda a{
+  border: none;
+  padding: .8rem 1rem;
+  background-color: var(--corSecundaria);
+  color: white;
+  transition: all .3s;
+  font-family: Poppins;
+  margin-bottom: 5rem;
+  text-decoration: none;
+  font-size: .8em;
+  text-align: center;
+}
+
+#container-totalCart-encomenda a:hover{
+  background-color: var(--corPrimaria);
+}
+
+
+
+
+
+@media(max-width:700px){
+  table{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  thead tr{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  thead th{
+    border: none;
+  }
+
+  th#produto{
+    padding-left: 0;
+  }
+
+  #img-product-name img{
+    
+  }
+
+  .quant-product .fa-solid{
+    padding: .3rem;
+  }
+
+  tbody tr{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  tbody tr td{
+    text-align: right;
+    
+    
+  }
+}

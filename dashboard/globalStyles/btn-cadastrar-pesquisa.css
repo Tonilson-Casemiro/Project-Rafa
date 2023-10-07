@@ -1,0 +1,77 @@
+
+/* botão cadastrar */
+
+.container-buttonCadastrar-inputSearch{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+.button-cadastrar{
+  font-family: Poppins;
+  width: 150px;
+  padding: .5rem 0;
+  color: white;
+  background-color: var(--corPrimaria);
+  transition: all .3s;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button-cadastrar:hover{
+  background-color: var(--corSecundaria);
+}
+
+
+
+/* Input da pesquisa de dados */
+
+.input-search{
+  width: 280px;
+  height: 30px;
+  display: flex;
+  font-family: Poppins;
+}
+
+.button-submit{
+  background-color: var(--corPrimaria);
+  width: 30px;
+  height: 100%;
+  position: relative;
+  padding: .5rem;
+  border: none;
+  transition: all .3s;
+  cursor: pointer;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.button-submit:hover{
+  background-color: var(--corSecundaria);
+}
+
+.button-submit i{
+  color: white;
+}
+
+
+.input-search label:hover{
+  background-color: var(--corSecundaria);
+}
+
+
+.input-search input{
+  border: .5px solid rgb(240, 240, 240);
+  outline: none;
+  width: 100%;
+  padding: .3rem;
+  padding-left: .6rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px ;
+}
+
+::placeholder{
+  font-family: Poppins;
+}

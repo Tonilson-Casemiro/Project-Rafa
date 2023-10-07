@@ -1,0 +1,41 @@
+/* icone subir top */
+
+.container-icon-back-to-top{
+  background-color: #db703749;
+  width: 50px;
+  height: 60px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  clip-path: circle();
+  text-decoration: none;
+  z-index: 500;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all .3s;
+
+}
+
+.container-icon-back-to-top:hover{
+  background-color: #db70377a;
+}
+
+.icon-back-to-top{
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s;
+}
+
+.showBackToTop{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+
+  <!-- css import -->
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="cadastro.css">
+  
+
+
+</head>
+<body>
+  
+  <form action="">
+    <div class="container-first-contentLinks">
+      <span>Loja</span>
+      <div class="links-pages-login-Register">
+        <a href="../login/login.html" class="link-page-Login">Login</a>
+        <a href="cadastro.html" class="link-page-register">Register</a>
+      </div>
+    </div>
+
+    <h1 class="welcome">Welcome!</h1>
+    <h2>Crie a sua conta</h2>
+
+    <!-- Inputs -->
+    <!-- Nome Completo -->
+    <div class="container-input">
+      <label for="fullName">Nome Completo</label>
+      <input type="text" placeholder="Nome Completo" id="fullName">
+    </div>
+    <!-- Email -->
+    <div class="container-input">
+      <label for="email">Email</label>
+      <input type="email" placeholder="Email" id="email">
+    </div>
+    <!-- Telefone -->
+    <div class="container-input">
+      <label for="telefone">Telefone</label>
+      <input type="number" placeholder="Número de telefone" id="telefone">
+    </div>
+    <!-- Password -->
+    <div class="container-input">
+      <label for="password">Palavra Passe</label>
+      <input type="password" placeholder="Senha" id="password">
+    </div>
+
+    <div class="container-input">
+      <label for="passwordConfirm">Confimar Palavra Passe</label>
+      <input type="password" placeholder="Senha" id="passwordConfirm">
+    </div>
+
+    <!-- Ajuda para o usuario  -->
+    <div class="container-helpUser">
+      <!-- Lembrar Password -->
+      <div class="rememberPass">
+        <input type="checkbox">
+        <p>Lembrar-me</p>
+      </div>
+      <!-- Esquecer Password -->
+      <a href="../recoverPassword/recoverPassword.html">Esqueceu a sua senha!</a>
+    </div>
+
+    <!-- input submit -->
+    <input type="submit" value="Cadastrar" class="inputSubmit">
+
+    <div class="container-socialMedia">
+
+    </div>
+  </form>
+
+</body>
+</html>

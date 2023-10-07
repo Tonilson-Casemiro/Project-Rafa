@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!--API Scroll reveal-->
+  <script src="bibliotecas/scrollreveal.js"></script>
+
+  <!--API Fontwaesome-->
+  <link rel="stylesheet" href="bibliotecas/fontawesome-free-6.4.0-web/css/all.min.css"> 
+
+  <!-- Css owl-carousel -->
+  <link rel="stylesheet" href="bibliotecas/owlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="bibliotecas/owlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!--Css import-->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/btnBackToTop.css">
+  <link rel="stylesheet" href="css/modalSearch.css">
+  <link rel="stylesheet" href="css/modais.css">
+  <link rel="stylesheet" href="css/carouselMarcas.css">
+  <link rel="stylesheet" href="css/carouselTestimonials.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+
+
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loading"></div>
+  </div>
+
+
+
+  <!--Header ou Cabeçalho do site-->
+  <header>
+    <!--First content header-->
+    <div class="container-content-top">
+      <div id="container-first-content-top">
+        <p>
+          <img src="" alt="">
+          <span id="span1-content-top">Buy</span>
+          <span id="span2-content-top">Online</span>
+        </p>
+      </div>
+      <div id="container-second-content-top">
+        <div>
+          <img src="assets/icones/telephone.png" alt="" style="width:15px;">
+          <p>924182273</p>
+        </div>
+        <div>
+          <img src="assets/icones/location.png" alt="" style="width:15px;">
+          <p>Luanda, Benfica - Angomart</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Menu de navegação-->
+    <nav class="navigation-area" id="nav">
+      
+      <!-- icone hamburguer -->
+      <img src="assets/icones/hamburger.png" id="open-menu" class="toggle" >
+
+      <!-- Logotipo -->
+      <a href="#" id="logo" > Loja</a>
+
+      <!-- Itens de Menu de Navegação -->
+      <ul id="list-itens-menu">
+        <li class="item-menu">
+          <a href="index.html" rel="next">Home</a>
+        </li>
+        <li class="item-menu">
+          <a href="pages/about_us/about_us.html" rel="next">About Us</a>
+        </li>
+        <li class="item-menu">
+          <a href="pages/products/products.html" rel="next">Products</a>
+        </li>
+        <li class="item-menu">
+          <a href="pages/elements/elements.html" rel="next">Elements</a>
+        </li>
+        <li class="item-menu">
+          <a href="pages/blog/blog.html" rel="next">Blogs</a>
+        </li>
+        <li class="item-menu">
+          <a href="pages/contacts/contacts.html" rel="next">Contacts</a>
+        </li>
+        <li class="li-container-btn-login">
+          <a href="pages/login/login.html" id="container-btn-login-li">
+            <span>Login</span>
+            <img src="assets/icones/login.png" alt="">
+          </a>
+        </li>
+        
+      </ul>
+
+      <!-- Area dos itens de Menu no fim a direita do header -->
+      <div class="container-itensMenu-end">
+        <!-- Area dos icones ou imagens de input -->
+        <div id="container-search" >
+          <img src="assets/icones/search-interface-symbol.png" class="icons-search-header" id="btn-search-black">
+          <img src="assets/icones/search-white.png" class="icon-nav-white icons-search-header" id="btn-search-white">
+        </div>
+        <!-- Area do icone de carrinho e número de produtos selecionados  -->
+        <a class="container-icon-carrinho-header">
+          <img src="assets/icons header/shopping-cart.png" alt="" width="30px">
+          <div class="number-products-carrinho">0</div>
+        </a>
+        <!-- Botão de Login -->
+        <a href="pages/login/login.html" id="container-btn-login">
+          <span>Login</span>
+          <i class="fa-light fa-arrow-right-to-arc" style="color: black;"></i>
+        </a>
+      </div>
+
+      <!-- Icone close-menu -->
+      <img src="assets/icones/close (1).png" id="close-menu" class="toggle">
+      <!-- Overlay -->
+      <div id="camada-escura"></div>
+    </nav>
+    <!-- container de carrinho vazio -->
+    <div class="container-info-carrinhoEmpty">
+      <p>Sem itens no carrinho</p>
+    </div>
+
+  </header>
+
+  <main>
+
+    
+
+
+
+    <!-- Modal da pesquisa de produtos -->
+    <div class="overlay-modal-search ">
+      <div class="modal-search">
+        <img src="assets/icones/close.png" alt="" width="
+        12px" class="close-modal-search">
+        <div class="container-input-search-modal">
+          <input type="text" placeholder="Search Products Here">
+          <a href="#" class="container-btn-search-modal">
+            <button>Pesquisar</button>
+          </a>
+          <!-- <img src="assets/icones/search-interface-symbol.png" alt="" width="22px"> -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal de produto Já existente no carrinho -->
+    <div class="overlay-modal-product-existInCar">
+      <div class="container-modal-product-existInCar">
+        <img src="assets/icones/close.png" alt="" width="
+        12px" class="close-modal-product-existInCar">
+        <p>Esse produto já foi adicionado no carrinho!</p>
+        <div class="container-exclamacionMark">
+          <span>!</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal de adicionar produto -->
+    <div class="overlay-modal-addProducts ">
+      <div class="container-modal-addProducts">
+        <img src="assets/icones/close.png" alt="" width="
+        12px" class="close-modal-addProducts">
+        <p>Tem a certeza que quer adicionar no carrinho!</p>
+        <div class="container-buttons-modal-addProducts">
+          <button>Sim</button>
+          <button>Não</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal product adicionado -->
+    <div class="overlay-modal-productAdicionado">
+      <div class="container-modal-productAdicionado">
+        <img src="assets/icones/close.png" alt="" width="
+        12px" class="close-modal-productAdicionado">
+        <p>Produto adicionado no carrinho com sucesso!</p>
+        <svg
+          width="65px"
+          height="65px"
+          viewBox="0 0 133 133"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          
+        >
+          <g
+              id="check-group"
+              stroke="none"
+              stroke-width="1"
+              fill="#DB7137"
+              fill-rule="evenodd"
+          >
+                  <circle
+                  id="filled-circle"
+                  fill="#DB7137"
+                  cx="66.5"
+                  cy="66.5"
+                  r="54.5"
+              />
+              <circle
+                  id="white-circle"
+                  fill="#DB7137"
+                  cx="66.5"
+                  cy="66.5"
+                  r="55.5"
+              />
+              <circle
+                  id="outline"
+                  stroke="#DB7137"
+                  stroke-width="4"
+                  cx="66.5"
+                  cy="66.5"
+                  r="54.5"
+              />
+              <polyline
+                  id="check"
+                  stroke="#FFFFFF"
+                  stroke-width="5.5"
+                  points="41 70 56 85 92 49"
+              />
+          </g>
+        </svg>
+
+      </div>
+    </div>
+
+
+    <!-- Modal view Products -->
+    <div class="overlay-modal-view-Products">
+      <div class="container-modal-viewProducts">
+        <img src="assets/icones/close.png" alt="" class="close-modal-view-Products">
+        <div class="container-details-product">
+          <div class="container-img-product">
+            <img src="assets/produtos/product-1_1-740x740.jpg" alt="" >
+            <div class="overlay-img-products"></div>
+          </div>
+          <div class="details-product">
+            <p class="product-name">Product Name</p>
+            <p class="preco">12000kz</p>
+            <p class="about-product">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro temporibus quo voluptatum qui doloremque vitae est eligendi, doloribus facere accusantium molestiae ducimus eaque illo dolor, maiores, quaerat deleniti possimus consectetur!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum reiciendis blanditiis error velit. Ducimus explicabo fuga similique?
+            </p>
+            <div class="btn-add-product">
+              <img src="assets/produtos/add-to-basket.png" alt="" class="icone-add-product" >
+              <span>Adicionar ao Carrinho</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <section id="section1">
+      <div class="container-section1">
+        <div>
+          <div class="backgroundBlack"></div>
+          <div class="container-content-section1">
+            <p class="text-big">
+              Visite a melhor loja
+              <br>
+              apartir do seu smatphone!
+              <br>
+              <span>Temos de tudo.</span>
+            </p>
+            <p class="text-small">
+              Você já pensou em  realizar compras na nossa loja de forma muito mais rapida
+              <br>
+              e digital,pois agora você já pode, apartir desse website.
+            </p>
+            <a href="pages/about_us/about_us.html" >
+              <span>View more</span>
+              <img src="assets/icones/right-arrow (1).png" alt="" width="20px">
+            </a>
+          </div>
+          <img src="assets/imgs/spa (1).jpg" alt=""  class="img-section1">
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Section Informacion about Site -->
+
+    <section id="section2">
+      <div class="container-informacion-about-site">
+        <div>
+          <span class="number-informacion">01</span>
+          <p class="assunto">Roupas personalizadas</p>
+          <p class="informacion">
+            Todo Cliente pode obter a roupa
+            que quizer apartir desse website
+            e avaliar todo e qualquer produto
+            da loja. Aproveite a plataforma
+            digital e faça já a sua compra.
+          </p>
+          <a href="pages/about_us/about_us.html" rel="next">
+            <button >View More</button>
+            <img src="assets/icones/right-arrow.png" alt="" width="30px">
+          </a>
+        </div>
+        <div>
+          <span class="number-informacion">02</span>
+          <p class="assunto">Roupas personalizadas</p>
+          <p class="informacion">
+            Todo Cliente pode obter a roupa
+            que quizer apartir desse website
+            e avaliar todo e qualquer produto
+            da loja. Aproveite a plataforma
+            digital e faça já a sua compra.
+          </p>
+          <a href="pages/about_us/about_us.html" rel="next">
+            <button >View More</button>
+            <img src="assets/icones/right-arrow.png" alt="" width="30px">
+          </a>
+        </div>
+        <div>
+          <span class="number-informacion">03</span>
+          <p class="assunto">Roupas personalizadas</p>
+          <p class="informacion">
+            Todo Cliente pode obter a roupa
+            que quizer apartir desse website
+            e avaliar todo e qualquer produto
+            da loja. Aproveite a plataforma
+            digital e faça já a sua compra.
+          </p>
+          <a href="pages/about_us/about_us.html" rel="next">
+            <button >View More</button>
+            <img src="assets/icones/right-arrow.png" alt="" width="30px">
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Section other Info -->
+
+    <section id="section3" class="container-info-section3">
+      <div>
+        <p id="assunto">Vamos saber mais <br> <br> sobre <span>Fashion</span></p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere at consectetur dolore iusto ea fugiat aperiam ipsam! Amet maxime labore alias, impedit quod minus cupiditate, cum dolorem provident, voluptatem omnis.
+          <br>
+          <br>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sequi, autem aperiam temporibus itaque molestias dolorem, ducimus perferendis similique facere praesentium quidem? A cum illo, qui modi sint exercitationem consectetur.
+        </p>
+        <a href="#">
+          <button>View More</button>
+        </a>
+      </div>
+      <div id="container-img-section3">
+        <img src="assets/imgs/il-1-1-1.png" alt="" id="img-section3" class="img-back">
+        <img src="assets/imgs/il-1-2-1.png" alt=""  class="img-front">
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Section Marcas -->
+
+    <section id="section-slides-marcas">
+      <div class="container-slides-marcas ">
+        <div class="slidesMarcas owl-carousel owl-theme">
+          <div class="item">
+            <img src="assets/marcas/client-1-2.png" alt="" class="img-slide-marca">
+          </div>
+          <div class="item">
+            <img src="assets/marcas/client-2-2.png" alt="" class="img-slide-marca">
+          </div>
+          <div class="item">
+            <img src="assets/marcas/client-3-2.png" alt="" class="img-slide-marca">
+          </div>
+          <div class="item">
+            <img src="assets/marcas/client-4-2.png" alt="" class="img-slide-marca">
+          </div>
+          <div class="item">
+            <img src="assets/marcas/client-5-2.png" alt="" class="img-slide-marca"> 
+          </div>
+          <div class="item">
+            <img src="assets/marcas/client-6-2.png" alt="" class="img-slide-marca">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section Destaques -->
+    <section class="section-destaque">
+      <div class="slidesImgsDestaques owl-carousel owl-theme">
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio1-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio2-740x740 (2).jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio3-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio4-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio5-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio6-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio8-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio9-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>    
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio10-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio11-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>  
+        <div class="item">
+          <div class="container-destaque">
+            <img src="assets/destaques/portfolio12-740x740.jpg" alt="" class="img-destaque">
+            <!-- camada preta em cima da imagem -->
+            <div class="container-informacion-img-destaque">
+              <p>Imagem Destacada</p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+      
+      <!-- Paginacion -->
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Section Categorias -->
+    <section class="section-categories">
+      <div class="container-categories-first-imgs">
+        <img src="assets/categorias/il-2-1.png" alt="" class="img1">
+        <img src="assets/categorias/il-2-2.png" alt="" class="img2">
+      </div>      
+      <div class="container-categories">
+        <div class="container-elements-categories" onmouseenter="showImgCategoria(0)" >
+          <span class="categories-number">01</span>
+          <span class="categories-name">Bar soap</span> 
+          <img src="assets/icones/right-arrow.png" class="icons-categories"></img>
+        </div>
+        <div class="container-elements-categories" onmouseenter="showImgCategoria(1)">
+          <span class="categories-number">02</span>
+          <span class="categories-name">Foaming Wash</span> 
+          <img src="assets/icones/right-arrow.png" class="icons-categories"></img>
+        </div>
+        <div class="container-elements-categories" onmouseenter="showImgCategoria(2)">
+          <span class="categories-number">03</span>
+          <span class="categories-name">Set of Soap</span> 
+          <img src="assets/icones/right-arrow.png" class="icons-categories"></img>
+        </div>
+        <div class="container-elements-categories" onmouseenter="showImgCategoria(3)">
+          <span class="categories-number">04</span>
+          <span class="categories-name">Shower gel</span> 
+          <img src="assets/icones/right-arrow.png" class="icons-categories"></img>
+        </div>
+        <a href="pages/about_us/about_us.html" class="button-link-all-categories">
+          <span>View More</span>
+          <img src="assets/icones/right-arrow (1).png" alt="" >
+        </a>
+      </div>
+      <div class="imgs-categories">
+        <img src="assets/categorias/sc-1-430x430.jpg" alt="" class="img-categories selected" >
+        <img src="assets/categorias/portfolio1-740x740.jpg" alt="" class="img-categories" >
+        <img src="assets/categorias/portfolio2-740x740 (2).jpg" alt="" class="img-categories">
+        <img src="assets/categorias/portfolio3-740x740.jpg" alt="" class="img-categories" >
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Section Products -->
+    <section class="section-products">
+      <p class="points">......</p>
+      <h1>Alguns Produtos da nossa Loja <br> <span>Aproveite já </span></h1>
+      <div class="slidesProducts owl-carousel owl-theme">
+        <div class="item">
+          <div class="container-products">
+            <div class="container-img-products">
+              <img src="assets/produtos/product-1_1-740x740.jpg" alt="" class="img-product">
+              <div class="overlay-products"></div>
+              <div class="container-icon-span-add-products">
+                <div class="container-add-products">
+                  <span>Ver no carrinho</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="name-products">Sabonete em barra de bergamota</p>
+              <p class="preco-products">9000kz</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container-products">
+            <div class="container-img-products">
+              <img src="assets/produtos/product-2_1-740x740.jpg" alt="" class="img-product">
+              <div class="overlay-products"></div>
+              <div class="container-icon-span-add-products">
+                <div class="container-add-products">
+                  <span>Ver no carrinho</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="name-products">Sabonete em barra de bergamota</p>
+              <p class="preco-products">9000kz</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container-products">
+            <div class="container-img-products">
+              <img src="assets/produtos/product-3_1-1-740x740.jpg" alt="" class="img-product">
+              <div class="overlay-products"></div>
+              <div class="container-icon-span-add-products">
+                <div class="container-add-products">
+                  <span>Ver no carrinho</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="name-products">Sabonete em barra de bergamota</p>
+              <p class="preco-products">9000kz</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container-products">
+            <div class="container-img-products">
+              <img src=" assets/produtos/product-4_1-740x740.jpg" alt="" class="img-product">
+              <div class="overlay-products"></div>
+              <div class="container-icon-span-add-products">
+                <div class="container-add-products">
+                  <span>Ver no carrinho</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="name-products">Sabonete em barra de bergamota</p>
+              <p class="preco-products">9000kz</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="container-products">
+            <div class="container-img-products">
+              <img src="assets/produtos/product-6_1-540x540.jpg" alt="" class="img-product">
+              <div class="overlay-products"></div>
+              <div class="container-icon-span-add-products">
+                <div class="container-add-products">
+                  <span>Ver no carrinho</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="name-products">Sabonete em barra de bergamota</p>
+              <p class="preco-products">9000kz</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+
+    <!-- Section Depoimentos -->
+    <section class="section-testimonials" >
+      <div class="container-testimonials">
+        <div class="container-img-destaque-testimonials">
+          <img src="assets/testimonials/portfolio7-740x740.jpg" alt="">
+        </div>
+        <div class="container-depoimento">
+          <div class="container-blockquote">
+            <div class="slidesTestimonials owl-carousel owl-theme">
+              <div class="item">
+                <blockquote>
+                  <img src="assets/icones/quote.png" alt="" class="icon-aspas-testimonials">
+                  <p class="conteudo-depoimento">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorum natus autem, facere magni ad impedit tenetur suscipit exercitationem quisquam eligendi quidem rerum voluptate deserunt, eum non velit doloribus? Quasi.
+                  </p>
+                  <cite>
+                    <div class="container-img-autor-testimonials">
+                      <img src="assets/testimonials/author-widget-190x190.jpg" alt="" class="img-autor-testimonials">
+                    </div>
+                    <div class="container-info-autor">
+                      <p class="autor-depoimento-name">Janeth Pilartes</p>
+                      <p class="autor-depoimento-work">Directora</p>
+                    </div>
+                  </cite>
+                </blockquote>
+              </div> 
+              <div class="item">
+                <blockquote>
+                  <img src="assets/icones/quote.png" alt="" class="icon-aspas-testimonials">
+                  <p class="conteudo-depoimento">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorum natus autem, facere magni ad impedit tenetur suscipit exercitationem quisquam eligendi quidem rerum voluptate deserunt, eum non velit doloribus? Quasi.
+                  </p>
+                  <cite>
+                    <div class="container-img-autor-testimonials">
+                      <img src="assets/testimonials/team1-190x190.jpg" alt="" class="img-autor-testimonials">
+                    </div>
+                    <div class="container-info-autor">
+                      <p class="autor-depoimento-name">Janeth Pilartes</p>
+                      <p class="autor-depoimento-work">Directora</p>
+                    </div>
+                  </cite>
+                </blockquote>
+              </div> 
+              <div class="item">
+                <blockquote>
+                  <img src="assets/icones/quote.png" alt="" class="icon-aspas-testimonials">
+                  <p class="conteudo-depoimento">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolorum natus autem, facere magni ad impedit tenetur suscipit exercitationem quisquam eligendi quidem rerum voluptate deserunt, eum non velit doloribus? Quasi.
+                  </p>
+                  <cite>
+                    <div class="container-img-autor-testimonials">
+                      <img src="assets/testimonials/testimonials-1-190x190.jpg" alt="" class="img-autor-testimonials">
+                    </div>
+                    <div class="container-info-autor">
+                      <p class="autor-depoimento-name">Janeth Pilartes</p>
+                      <p class="autor-depoimento-work">Directora</p>
+                    </div>
+                  </cite>
+                </blockquote>
+              </div>  
+
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <!-- section blogs -->
+    <section class="section-blogs">
+      <div class="container-textUp-blogs">
+        <div>
+          <span class="points">.....</span>
+          <h1>Blogs Recentes veja-os agora</h1>
+        </div>
+        <a href="pages/blog/blog.html" class="button-link-page-blogs">
+          <span>View More</span>
+          <img src="assets/icones/right-arrow (1).png" alt="">
+        </a>
+      </div>
+
+      <div class="container-blogs">
+        <div class="slidesBlogs owl-carousel owl-theme">
+          <div class="item">
+            <div class="container-blog">
+              <div class="container-img-blog">
+                <img src="assets/Blogs/blog-single-2-740x770.jpg" alt="">
+                <a href="pages/categoriaBlog/categoriaBlog.html">Tag name</a>
+              </div>
+              <div class="container-info-blog">
+                <div class="container-firstInfo-blog">
+                  <p class="blog-date">10-08-2023</p>
+                  <!-- <p class="points">...</p> -->
+                  <p class="autor-blog">Tonilson Casimiro</p>
+                </div>
+                <p class="theme-blog">
+                  O Mundo está cheio de maravilhas inesplicavéis que provam a existência de Deus.
+                </p>
+                <a href="pages/blog/blog.html" rel="next">
+                  <span >View More</span>
+                  <img src="assets/icones/right-arrow.png" alt="" class="img-arrow-blog">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container-blog">
+              <div class="container-img-blog">
+                <img src="assets/Blogs/blog-single-3-740x770.jpg" alt="">
+                <a href="pages/categoriaBlog/categoriaBlog.html">Tag name</a>
+              </div>
+              <div class="container-info-blog">
+                <div class="container-firstInfo-blog">
+                  <p class="blog-date">10-08-2023</p>
+                  <!-- <p class="points">...</p> -->
+                  <p class="autor-blog">Rafael Pilartes</p>
+                </div>
+                <p class="theme-blog">
+                  O Mundo está cheio de maravilhas inesplicavéis que provam a existência de Deus.
+                </p>
+                <a href="pages/blog/blog.html" rel="next">
+                  <span >View More</span>
+                  <img src="assets/icones/right-arrow.png" alt="" class="img-arrow-blog">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container-blog">
+              <div class="container-img-blog">
+                <img src="assets/Blogs/blog-single-5-740x770.jpg" alt="">
+                <a href="pages/categoriaBlog/categoriaBlog.html">Tag name</a>
+              </div>
+              <div class="container-info-blog">
+                <div class="container-firstInfo-blog">
+                  <p class="blog-date">10-08-2023</p>
+                  <!-- <p class="points">...</p> -->
+                  <p class="autor-blog">Victor Luís</p>
+                </div>
+                <p class="theme-blog">
+                  O Mundo está cheio de maravilhas inesplicavéis que provam a existência de Deus.
+                </p>
+                <a href="pages/blog/blog.html" rel="next">
+                  <span >View More</span>
+                  <img src="assets/icones/right-arrow.png" alt="" class="img-arrow-blog">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container-blog">
+              <div class="container-img-blog">
+                <img src="assets/Blogs/blog-single-2-740x770.jpg" alt="">
+                <a href="pages/categoriaBlog/categoriaBlog.html">Tag name</a>
+              </div>
+              <div class="container-info-blog">
+                <div class="container-firstInfo-blog">
+                  <p class="blog-date">10-08-2023</p>
+                  <!-- <p class="points">...</p> -->
+                  <p class="autor-blog">Domingos Caetano</p>
+                </div>
+                <p class="theme-blog">
+                  O Mundo está cheio de maravilhas inesplicavéis que provam a existência de Deus.
+                </p>
+                <a href="pages/blog/blog.html" rel="next">
+                  <span >View More</span>
+                  <img src="assets/icones/right-arrow.png" alt="" class="img-arrow-blog">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <a href="index.html#"  class="container-icon-back-to-top">
+      <img src="assets/icones/up-arrow.png" alt="" class="icon-back-to-top">
+    </a>
+  </main>
+
+
+  <footer>
+    <div class="container-sections-footer">
+      <div class="section1-Footer">
+        <p class="title">Contact us</p>
+        <div class="container-contact-us">
+          <div class="container-contact-us-info">
+            <img src="assets/icons Footer/location.png" alt="" class="icon-footer">
+            <p>Benfica -Rua do AngoMart</p>
+          </div>
+          <div class="container-contact-us-info">
+            <img src="assets/icons Footer/telephone.png" alt="" class="icon-footer">
+            <p>+244 924 182 273</p>
+          </div>
+          <div class="container-contact-us-info">
+            <!-- <img src="assets/icons Footer/email.png" alt="" class="icon-footer"> -->
+            <p class="aroba">@</p>
+            <p>loja@gmail.com</p>
+          </div>
+        </div>
+        
+      </div>
+  
+      <div class="section2-Footer">
+        <p class="title">Loja</p>
+        <p class="info-about-site">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio autem nam accusamus vero porro distinctio atque ut, facere inventore quam id quas assumenda deleniti! Non numquam nulla quis maiores corporis.
+        </p>
+        <div class="container-icons-redesSociais">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="assets/icons Footer/facebook.png" alt="" class="icon-footer">
+          </a href="#">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="assets/icons Footer/linkedin.png" alt="" class="icon-footer">
+          </a href="#">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="assets/icons Footer/instagram.png" alt="" class="icon-footer">
+          </a href="#">
+          <!-- container icon -->
+          <a href="#" class="container-icon-redesSociais">
+            <img src="assets/icons Footer/whatsapp.png" alt="" class="icon-footer">
+          </a href="#">
+        </div>
+  
+      </div>
+  
+      <div class="section3-Footer">
+        <p class="title">Working hours</p>
+        <div class="container-work-hours">
+          <div class="work-hours">
+            <span class="day-week">Mon - Fri: </span>
+            <span class="hours">7.00am - 6.00pm</span>
+          </div>
+          <div class="work-hours">
+            <span class="day-week">Sat: </span>
+            <span class="hours">7.00am - 6.00pm</span>
+          </div>
+          <div class="work-hours">
+            <span class="day-week">Sun: </span>
+            <span class="hours">7.00am - 6.00pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-last-conteudo-footer">
+      <div class="linha-rodape"></div>
+      <p class="last-text-footer">Esse site foi desenvolvido pela empresa TCHOSSY.</p>
+    </div>
+  </footer>
+
+
+
+  <!--script dos scroll reveal-->
+  <script src="bibliotecas/scrollreveal.js"></script>
+  <script src="js/scrollRevealHome.js"></script> 
+
+  <!-- Script Loader  -->
+  <script src="js/loader.js"></script>
+
+  <!--script do header-->
+  <script src="js/header.js"></script>
+
+  <!-- script button backToTop -->
+  <script src="js/btnBackToTop.js"></script>
+
+  <!-- Script dos modais -->
+  <script src="js/modalSearch.js"></script>
+  <script src="js/modais.js"></script>
+
+  <!-- script jquery -->
+  <script src="bibliotecas/jquery/jquery.min.js"></script>
+
+  <!-- Script carousel -->
+  <script src="bibliotecas/owlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="js/owlCarouselHome.js"></script>
+  <script src="js/carouselMarcas.js"></script>
+  <script src="js/carouselTestimonials.js"></script>
+
+  <!-- script main -->
+  <script src="js/main.js"></script>
+  
+  
+  
+</body>
+</html>

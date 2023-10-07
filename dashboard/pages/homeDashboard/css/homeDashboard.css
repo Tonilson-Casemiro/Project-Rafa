@@ -1,0 +1,134 @@
+
+
+/* Home Dashboard */
+
+
+/* Cubos com dados do banco de dados (users, pedidos, compras) */
+
+.container-dados-database p{
+  font-size: .9em;
+}
+
+.container-cubos-dados{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.container-cubos-dados .cubo-dados{
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(226, 226, 226, 0.61); 
+  display: flex;
+  gap: 1rem;
+  width: 220px;
+  border-radius: 15px;
+}
+
+.container-cubos-dados .cubo-dados .container-icon{
+  position: relative;
+}
+
+.container-cubos-dados .cubo-dados img{
+  background-color: #db70371f;
+  clip-path: circle();
+  padding: .5rem;
+  
+}
+
+.cubo-dados .info{
+
+}
+
+.cubo-dados .info .about{
+
+}
+
+.cubo-dados .info .number{
+  font-size: 1.2em;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.others-informacions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* compras feitas  */
+
+.container-table-compras{
+  width: 40%;
+}
+
+/* users recents */
+
+.container-table-users{
+  width: 60%;
+}
+
+.container-table-users table tbody td{
+  padding: 0;
+}
+
+.container-table p{
+  font-size: .9em;
+}
+
+.container-aboutTable-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-aboutTable-button a{
+  padding: .3rem 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: var(--corPrimaria);
+  transition: all .3s;
+  font-size: .7em;
+  border-radius: 7px;
+}
+
+.container-aboutTable-button a:hover{
+  background-color: var(--corSecundaria);
+}
+
+.cubo-dados i{
+  font-size: 1.3em;
+  color: var(--corPrimaria);
+  background-color: #db70371f;
+  padding: 1rem 1rem;
+  border-radius: 50%;
+}
+
+
+
+/* dados da tabela */
+
+.container-table{
+  padding: 1rem 2rem;
+}
+
+td{
+  padding: 1.2rem 1rem;
+}
+
+tbody tr td img{
+  clip-path: circle();
+  width: 40px;
+  object-fit: cover;
+}

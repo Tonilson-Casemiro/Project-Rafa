@@ -1,0 +1,186 @@
+footer{
+  background-color: var(--corSecundaria);
+  display: flex;
+  gap: 6rem;
+  flex-direction: column;
+  padding: 8rem 4rem 1.5rem 4rem;
+}
+
+.container-sections-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p.title{
+  color: white;
+  font-size: 1.2em;
+}
+
+.section1-Footer .title{
+  margin-bottom: 2rem;
+}
+
+.container-contact-us{
+  color: white;
+}
+
+.container-contact-us-info{
+  display: flex;
+  gap: .4rem;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.icon-footer{
+  width: 20px;
+}
+
+.container-contact-us-info p{
+  font-size: .9em;
+  color: white;
+}
+
+footer .aroba{
+  font-size: 1.5em;
+  color: var(--corPrimaria);
+}
+
+/* Footer section 2 */
+
+.section2-Footer{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2-Footer .title{
+  font-size: 1.5em;
+}
+
+.section2-Footer .info-about-site{
+  color: white;
+  max-width: 550px;
+  font-size: .9em;
+  text-align: center;
+  line-height: 1.8em;
+
+}
+
+.section2-Footer .icon-footer{
+  width: 15px;
+}
+
+
+.container-icons-redesSociais{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  font-family: Raleway;
+}
+
+.container-icon-redesSociais{
+  border: .1px solid gray;
+  border-radius: 50%;
+  padding: .5rem .7rem;
+  transition: all .3s;
+}
+
+.container-icon-redesSociais:hover{
+  background-color: var(--corPrimaria);
+}
+
+
+
+
+/* section 3 Footer */
+
+.section3-Footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.section3-Footer .title{
+  text-align: right;
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 1.2em;
+}
+
+.container-work-hours{
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.work-hours{
+  display: flex;
+  gap: .5rem;
+  font-size: .9em;
+}
+
+.work-hours .day-week{
+  color: var(--corPrimaria);
+}
+
+.work-hours .hours{
+  color: white;
+}
+
+
+
+
+/* Last conteudo no footer */
+.container-last-conteudo-footer{
+  width: 100%;
+}
+
+.linha-rodape{
+  background-color: rgba(128, 128, 128, 0.61);
+  width: 100%;
+  height: .3px;
+}
+
+.last-text-footer{
+  margin-top: 1rem;
+  color: white;
+  font-size: .9em;
+  text-align: center;
+}
+
+
+
+
+
+/* Responsividade no footer */
+
+@media(max-width: 1067px){
+  footer .container-sections-footer{
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: baseline;
+    text-align: center;
+  }
+
+  /* section 1 footer*/
+  .container-contact-us-info{
+    text-align: center;
+    justify-content: center;
+  }
+
+  .section2-Footer{
+    margin-bottom: 2rem;
+  }
+
+  /* section 3 footer*/
+  .section3-Footer .title{
+    text-align: center;
+  }
+  .work-hours{
+    justify-content: center;
+  }
+}
+

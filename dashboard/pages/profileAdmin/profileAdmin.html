@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes Dashboard</title>
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="../../../bibliotecas/fontawesome-free-6.4.0-web/css/all.min.css"> 
+
+  <!-- Links css -->
+  <link rel="stylesheet" href="../../../css/global.css">  
+  <link rel="stylesheet" href="../../../css/loader.css">  
+  <link rel="stylesheet" href="css/profileAdmin.css">
+
+
+  <!-- css globais Dashboard -->
+  <link rel="stylesheet" href="../../globalStyles/globalDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/menuLateralDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/contentTopDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/contentPageDashboard.css">
+  <link rel="stylesheet" href="../../globalStyles/btn-cadastrar-pesquisa.css">
+  <link rel="stylesheet" href="../../globalStyles/tablesDashboard.css">
+
+  <!-- Modais -->
+  <!-- css modal deslogar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalDeslogarDashboard.css">
+  <!-- css modal editar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalEditarDashboard.css">
+  <!-- css modal apagar -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalApagarDashboard.css">
+  <!-- css modal efectuado -->
+  <link rel="stylesheet" href="../../globalStylesModais/modalEfectuadoDashboard.css">
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loading"></div>
+  </div>
+
+  <!-- Modal deslogar da dashboard -->
+  <div class="overlay-modal-deslogarDashboard">
+    <div class="container-modal-deslogarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-deslogarDashboard">
+      <p>Tem a certeza que quer Terminar Seccão!</p>
+      <div class="container-buttons-modal-deslogarDashboard">
+        <button>Sim</button>
+        <button>Não</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal apagar usuario-->
+  <div class="overlay-modal-apagarDashboard">
+    <div class="container-modal-apagarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-apagarDashboard">
+      <p>Tem a certeza que quer apagar esse cliente!</p>
+      <div class="container-buttons-modal-apagarDashboard">
+        <button>Sim</button>
+        <button>Não</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal editar usuario -->
+  <div class="overlay-modal-editarDashboard">
+    <div class="container-modal-editarDashboard">
+      <img src="../../../assets/icones/close.png" alt="" width="
+        12px" class="close-modal-editarDashboard">
+      <form action="">
+        <div class="container-input">
+          <label for="fullName">Nome Completo</label>
+          <input type="text" placeholder="Nome" id="fullName" value="Tonilson Casimiro">
+        </div>
+        <div class="container-input">
+          <label for="fullName">Nome Completo</label>
+          <input type="text" placeholder="Nome" id="fullName" value="Tonilson Casimiro">
+        </div>
+        <div class="container-input">
+          <label for="fullName">Nome Completo</label>
+          <input type="text" placeholder="Nome" id="fullName" value="Tonilson Casimiro">
+        </div>
+        <div class="container-input">
+          <label for="fullName">Nome Completo</label>
+          <input type="text" placeholder="Nome" id="fullName" value="Tonilson Casimiro">
+        </div>
+        <div class="container-input">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email" id="email" value="casimirotonilson1@gmail.com">
+        </div>
+        <div class="container-input">
+          <label for="telefone">Telefone</label>
+          <input type="number" placeholder="Telefone" id="telefone" value="924182273">
+        </div>
+        <div class="container-input">
+          <label for="senha">Palavra Passe</label>
+          <input type="password" placeholder="Senha" id="senha" value="inoyasha">
+        </div>
+        <div class="container-input">
+          <label for="passwordConfirm">Palavra Passe</label>
+          <input type="password" placeholder="Senha" id="passwordConfirm" value="inoyasha">
+        </div>
+        <div class="container-input">
+          <input type="file" id="input-file">
+        </div>
+        <input type="submit" class="btn-submit" value="editar">
+      </form>
+
+    </div>
+  </div> 
+
+  <!-- efectuado -->
+  <div class="overlay-modal-efectuado">
+    <div class="container-modal-efectuado">
+      <img src="assets/icones/close.png" alt="" width="
+        12px" class="close-modal-efectuado">
+      <p>Efectuado!</p>
+      <svg
+          width="65px"
+          height="65px"
+          viewBox="0 0 133 133"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          
+        >
+          <g
+              id="check-group"
+              stroke="none"
+              stroke-width="1"
+              fill="#DB7137"
+              fill-rule="evenodd"
+          >
+                  <circle
+                  id="filled-circle"
+                  fill="#DB7137"
+                  cx="66.5"
+                  cy="66.5"
+                  r="54.5"
+              />
+              <circle
+                  id="white-circle"
+                  fill="#DB7137"
+                  cx="66.5"
+                  cy="66.5"
+                  r="55.5"
+              />
+              <circle
+                  id="outline"
+                  stroke="#DB7137"
+                  stroke-width="4"
+                  cx="66.5"
+                  cy="66.5"
+                  r="54.5"
+              />
+              <polyline
+                  id="check"
+                  stroke="#FFFFFF"
+                  stroke-width="5.5"
+                  points="41 70 56 85 92 49"
+              />
+          </g>
+      </svg>
+
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="container-menuLateral-content-Dashboard">
+
+    <div class="container-menuLateral show">
+
+      <div class="container-logo">
+        <img src="../../assets/icones menu/ecommerce.png" alt="">
+        <span class="logotipoName">Shopping</span>
+      </div>
+
+      <div class="container-info-admin">
+        <div class="container-img-admin">
+          <img src="../../assets/minhas fotos/tonyperfil.jpg" alt="" class="img-admin">
+        </div>
+        <div class="container-info">
+          <p>Tonilson Casimiro</p>
+          <p>Administrador</p>
+        </div>
+      </div>
+
+      <!-- itens de menu -->
+      <div class="container-itens-menu">
+        <a href="../homeDashboard/homeDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/home.png" alt="">
+          <span>Home</span>
+        </a>
+
+        <a href="./clientsDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/teamwork.png" alt="">
+          <span>Clientes</span>
+        </a>
+
+        <a href="../productsDashboard/productDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/product.png" alt="">
+          <span>Produtos</span>
+        </a>
+
+        <a href="../categoriasDashboard/categoriasDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/categories.png" alt="">
+          <span>Categorias</span>
+        </a>
+
+        <a href="../marcasDashboard/marcasDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/tag (1).png" alt="">
+          <span>Marcas</span>
+        </a>
+
+        <a href="../pedidosDashboard/pedidosDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/exam.png" alt="">
+          <span>Pedidos</span>
+        </a>
+
+        <a href="../blogsDashboard/blogsDashboard.html" class="item-menu">
+          <!-- <i class="fa-solid fa-blog"></i> -->
+          <img src="../../assets/icones menu/writing.png" alt="" class="icone-blog">
+          <span>Blogs</span>
+        </a>
+
+        <a href="../comprasDashboard/comprasDashboard.html" class="item-menu">
+          <img src="../../assets/icones menu/money-bag.png" alt="">
+          <span>Compras</span>
+        </a>
+
+        <a href="../profileAdmin/profileAdmin.html" class="item-menu">
+          <img src="../../assets/icones menu/person.png" alt="">
+          <span>Account</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="content-Dashboard">
+
+      <!-- container referencia da pagina, button menu mobile, upload button   -->
+      <div class="containerTop">
+        <div class="container-iconMenuMobile-refPage">
+          <!-- icone menu mobile -->
+          <i class="fa-solid fa-bars"></i>
+          <!-- referencia da pagina -->
+          <p class="ref-page">
+            <span class="pageName">Admin</span>
+            <span class="contentAboutPage">Your Profile</span>
+          </p>
+        </div>
+        <!-- botão de deslogar -->
+        <button class="button-logout" onclick="abrirModalDeslogar()">Sair</button>
+      </div>
+
+      <!-- button open modal edit data admin -->
+      <button onclick="abrirModalEditar()" class="button-edit">
+        <i class="fa-regular fa-pen-to-square"></i>
+        Editar perfil
+      </button>
+
+      <!-- dados pessoais -->
+      <div class="info-About-Admin">
+        <p class="about-title">Info</p>
+        <div class="container-info">
+
+          <div class="about-admin">
+            <p>
+              <i class="fa-solid fa-user">
+              </i>Nome Completo:
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              Telefone:
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              Email:
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Location:
+            </p>
+          </div>
+          <!-- valores -->
+          <div class="values">
+            <p>Rafael Pilartes</p>
+            <p>924182273</p>
+            <p>rafa@gmail.com</p>
+            <p>Rua 11 do Projecto Nova Vida</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="info-About-Admin">
+        <p class="about-title">Redes sociais</p>
+        <div class="redes-sociais">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <i class="fa-brands fa-whatsapp">
+            <a href="#"></a>
+          </i>
+          <i class="fa-brands fa-twitter">
+            <a href="#"></a>
+          </i>
+        </div>
+      </div>
+
+      <!-- Descrição admin -->
+      <div class="info-About-Admin">
+        <p class="about-title">About</p>
+        <p class="content-about">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestiae quos cupiditate in architecto minus, harum sint quisquam esse ea pariatur incidunt necessitatibus expedita fuga magni odio quaerat blanditiis veniam. 
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet velit fugiat deserunt ratione culpa facilis dolor non, repellendus nemo iste facere officia aliquid molestias reprehenderit odio voluptatum. Sequi, saepe perspiciatis.
+        </p>
+        <div class="container-designation-website">
+          <!-- designação -->
+          <div class="container">
+            <i class="fa-solid fa-user"></i>
+            <div>
+              <p>Profissão:</p>
+              <p>Programador</p>
+            </div>
+          </div>
+          <!-- website -->
+          <div class="container">
+            <i class="fa-solid fa-computer"></i>
+            <div>
+              <p>Website:</p>
+              <a href="#">www.loja.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    
+
+  </div>
+
+  <!-- scripts -->
+
+  <!-- Loader -->
+  <script src="../../../js/loader.js"></script>
+
+  <!-- Scroll Reveal -->
+  <script src="../../../bibliotecas/scrollreveal.js"></script>
+  <script src="js/scrollRevealHomeDashboard.js"></script>
+
+  <!-- Menu lateral -->
+  <script src="../../globalScripts/menuLateralDashboard.js"></script>
+
+  <!-- Modais -->
+  <!-- Modal Deslogar -->
+  <script src="../../globalScriptsModais/modalDeslogarDashboard.js"></script>
+  <!-- Modal Editar -->
+  <script src="../../globalScriptsModais/modalEditarDashboard.js"></script>
+  <!-- Modal Apagar -->
+  <script src="../../globalScriptsModais/modalApagarDashboard.js"></script>
+  <!-- Modal efectuado -->
+  <script src="../../globalScriptsModais/modalEfectuadoDashboard.js"></script>
+
+</body>
+</html>

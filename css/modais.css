@@ -1,0 +1,613 @@
+.removeOverflow{
+  overflow: hidden;
+}
+
+
+
+/* Animacion scale for all modals */
+
+@keyframes animacionShowModal{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: translate(1);
+  }
+}
+
+
+
+
+
+
+
+/* Modal question if will be add product car or not */
+
+.overlay-modal-addProducts{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-addProducts.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-addProducts.show .container-modal-addProducts{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+
+}
+
+.overlay-modal-addProducts.show .container-modal-addProducts p{
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.overlay-modal-addProducts.show .close-modal-addProducts{
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+.overlay-modal-addProducts.show .container-buttons-modal-addProducts{
+
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-modal-addProducts.show button{
+  border: none;
+  padding: .5rem 1.5rem;
+  background-color: var(--corSecundaria);
+  color: white;
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.overlay-modal-addProducts.show button:hover{
+  background-color: var(--corPrimaria);
+  
+}
+
+@media(max-width:540px){
+  .overlay-modal-addProducts.show .container-modal-addProducts{
+    width: 90%;
+  }
+  
+}
+
+@media(max-width:440px){
+  .overlay-modal-addProducts.show .container-modal-addProducts{
+    height: 110px;
+  }
+
+  .overlay-modal-addProducts.show .container-modal-addProducts p{
+    width: 85%;
+  }
+
+  .container-buttons-modal-addProducts{
+    margin-bottom: .5rem;
+  }
+
+  .overlay-modal-addProducts.show button{
+    
+  }
+}
+
+
+/* Modal produto já adicionado */
+
+.overlay-modal-productAdicionado{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-productAdicionado.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-productAdicionado.show .container-modal-productAdicionado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+
+}
+
+.overlay-modal-productAdicionado.show .close-modal-productAdicionado{
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+.overlay-modal-productAdicionado.show p{
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+}
+
+
+/* SVG check modal produto já adicionado */
+
+.overlay-modal-productAdicionado.show svg{
+  display: block;
+  margin: auto;
+
+}
+
+#check-group {
+  animation: 0.32s ease-in-out 1.03s check-group;
+  transform-origin: center;
+}
+
+#check-group #check {
+  animation: 0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+  stroke-dasharray: 0, 75px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#check-group #outline {
+  animation: 0.38s ease-in outline;
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+
+#check-group #white-circle {
+  animation: 0.35s ease-in 0.35s forwards circle;
+  transform: none;
+  transform-origin: center;
+}
+
+@keyframes outline {
+from {
+  stroke-dasharray: 0, 345.576px;
+}
+to {
+  stroke-dasharray: 345.576px, 345.576px;
+}
+}
+@keyframes circle {
+from {
+  transform: scale(1);
+}
+to {
+  transform: scale(0);
+}
+}
+@keyframes check {
+from {
+  stroke-dasharray: 0, 75px;
+}
+to {
+  stroke-dasharray: 75px, 75px;
+}
+}
+@keyframes check-group {
+from {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.09);
+}
+to {
+  transform: scale(1);
+}
+}
+
+@media(max-width:520px){
+  .overlay-modal-productAdicionado.show .container-modal-productAdicionado{
+    width: 80%;
+    height: 140px;
+  }
+
+  .overlay-modal-productAdicionado.show .container-modal-productAdicionado p{
+    top: 1.4rem;
+  }
+
+}
+
+
+
+
+/* Modal view products */
+
+.overlay-modal-view-Products{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-view-Products.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-view-Products.show .container-modal-viewProducts{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 900px;
+  height: auto;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.overlay-modal-view-Products.show .close-modal-view-Products{
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 12px;
+}
+
+.overlay-modal-view-Products.show .container-details-product{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.overlay-modal-view-Products.show .container-img-product{
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.overlay-modal-view-Products.show .container-img-product .overlay-img-products{
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  background-color: rgba(128, 128, 128, 0.144);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.overlay-modal-view-Products.show .container-img-product:hover .overlay-img-products{
+  opacity: 1;
+}
+
+
+
+.overlay-modal-view-Products.show .container-img-product img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-modal-view-Products.show .container-details-product .details-product{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.overlay-modal-view-Products.show .container-details-product .product-name{
+  font-size: 1.3em;
+}
+
+.overlay-modal-view-Products.show .container-details-product .preco{
+  color: red;
+  font-size: 1.3em;
+}
+
+.overlay-modal-view-Products.show .container-details-product .about-product{
+  max-width: 400px;
+}
+
+.overlay-modal-view-Products.show .container-details-product .btn-add-product{
+  background-color: var(--corSecundaria);
+  padding: .5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: .5rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.overlay-modal-view-Products.show .container-details-product .btn-add-product:hover{
+  background-color: var(--corPrimaria);
+}
+
+.overlay-modal-view-Products.show .container-details-product .icone-add-product{
+  width: 25px;
+}
+
+.overlay-modal-view-Products.show .container-details-product .btn-add-product span{
+  color: white;
+}
+
+@media(max-width: 940px){
+  .overlay-modal-view-Products.show .container-modal-viewProducts{
+    width: 90%;
+  }
+  .overlay-modal-view-Products.show .container-img-product{
+    height: 300px;
+
+  }
+}
+
+@media(max-width: 740px){
+  .overlay-modal-view-Products.show .container-details-product{
+    flex-direction: column;
+    
+  }
+
+  .overlay-modal-view-Products.show{
+    overflow-y: scroll;
+  }
+
+  .overlay-modal-view-Products.show .container-modal-viewProducts{
+    margin-top: 7rem;
+  
+  }
+   
+}
+
+@media(max-width: 510px){
+
+
+  .overlay-modal-view-Products.show .container-img-product {
+    width: 98%;
+    height: 300px;
+    margin-top: 1rem;
+  }
+
+
+  
+}
+
+
+
+
+
+/* Modal de produto já existente no carrinho */
+
+.overlay-modal-product-existInCar{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-product-existInCar.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-product-existInCar.show .container-modal-product-existInCar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.overlay-modal-product-existInCar.show .close-modal-product-existInCar{
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+.overlay-modal-product-existInCar.show .container-modal-product-existInCar p{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+
+.overlay-modal-product-existInCar.show .container-modal-product-existInCar .container-exclamacionMark{
+  margin: auto;
+  margin-top: .3rem;
+  border: 4px solid var(--corPrimaria);
+  border-radius: 50%;
+  padding: 1rem;
+  width: 50px;
+  height: 45px;
+  position: relative;
+}
+
+.overlay-modal-product-existInCar.show .container-modal-product-existInCar .container-exclamacionMark span{
+  color: var(--corPrimaria);
+  font-size: 1.7em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+}
+
+@media(max-width:530px){
+  .overlay-modal-product-existInCar.show .container-modal-product-existInCar{
+    width: 80%;
+    height: 110px;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+/* Modal de pedido enviado */
+
+.overlay-modal-pedidoEnviado{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-pedidoEnviado.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-pedidoEnviado.show .container-modal-pedidoEnviado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+
+}
+
+.overlay-modal-pedidoEnviado.show .close-modal-pedidoEnviado{
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+.overlay-modal-pedidoEnviado.show p{
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+}
+
+
+/* SVG check modal pedido enviado */
+
+.overlay-modal-pedidoEnviado.show svg{
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+
+}
+
+#check-group {
+  animation: 0.32s ease-in-out 1.03s check-group;
+  transform-origin: center;
+}
+
+#check-group #check {
+  animation: 0.34s cubic-bezier(0.65, 0, 1, 1) 0.8s forwards check;
+  stroke-dasharray: 0, 75px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#check-group #outline {
+  animation: 0.38s ease-in outline;
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+
+#check-group #white-circle {
+  animation: 0.35s ease-in 0.35s forwards circle;
+  transform: none;
+  transform-origin: center;
+}
+
+@keyframes outline {
+from {
+  stroke-dasharray: 0, 345.576px;
+}
+to {
+  stroke-dasharray: 345.576px, 345.576px;
+}
+}
+@keyframes circle {
+from {
+  transform: scale(1);
+}
+to {
+  transform: scale(0);
+}
+}
+@keyframes check {
+from {
+  stroke-dasharray: 0, 75px;
+}
+to {
+  stroke-dasharray: 75px, 75px;
+}
+}
+@keyframes check-group {
+from {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.09);
+}
+to {
+  transform: scale(1);
+}
+}
+
+@media(max-width:520px){
+  .overlay-modal-pedidoEnviado.show .container-modal-pedidoEnviado{
+    width: 80%;
+    height: 140px;
+  }
+
+  .overlay-modal-pedidoEnviado.show .container-modal-pedidoEnviado p{
+    top: 1.4rem;
+  }
+
+}

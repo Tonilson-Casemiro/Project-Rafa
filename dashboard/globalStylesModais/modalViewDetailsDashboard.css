@@ -1,0 +1,132 @@
+/* Modal view products */
+
+.overlay-modal-viewDetails{
+  display: none;
+  font-family: Poppins;
+}
+
+.overlay-modal-viewDetails.show{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 999;
+  animation: animacionShowModal .4s ease-in-out;
+}
+
+.overlay-modal-viewDetails.show .container-modal-viewDetails{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  width: 900px;
+  height: auto;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.overlay-modal-viewDetails.show .close-modal-viewDetails{
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 12px;
+}
+
+.overlay-modal-viewDetails.show .container-details{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.overlay-modal-viewDetails.show .container-img{
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.overlay-modal-viewDetails.show .container-img .overlay-img{
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+  background-color: rgba(128, 128, 128, 0.144);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.overlay-modal-viewDetails.show .container-img:hover .overlay-img-{
+  opacity: 1;
+}
+
+
+
+.overlay-modal-viewDetails.show .container-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-modal-viewDetails.show .container-details .details{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.overlay-modal-viewDetails.show .container-details .name{
+  font-size: 1.3em;
+  color: var(--corPrimaria);
+}
+
+.overlay-modal-viewDetails.show .container-details .preco{
+  color: var(--corPrimaria);
+  font-size: 1.3em;
+}
+
+.overlay-modal-viewDetails.show .container-details .about{
+  max-width: 400px;
+  font-size: .9em;
+}
+
+
+
+@media(max-width: 940px){
+  .overlay-modal-viewDetails.show .container-modal-view{
+    width: 90%;
+  }
+  .overlay-modal-viewDetails.show .container-img{
+    height: 300px;
+
+  }
+}
+
+
+
+@media(max-width: 740px){
+  .overlay-modal-viewDetails.show .container-details{
+    flex-direction: column;
+  }
+
+  .overlay-modal-viewDetails.show{
+    overflow-y: scroll;
+  }
+
+  .overlay-modal-viewDetails.show .container-modal-viewDetails{
+    margin-top: 7rem;
+  
+  }
+   
+}
+
+@media(max-width: 510px){
+
+  .overlay-modal-viewDetails.show .container-img-{
+    width: 98%;
+    height: 300px;
+    margin-top: 1rem;
+  } 
+}

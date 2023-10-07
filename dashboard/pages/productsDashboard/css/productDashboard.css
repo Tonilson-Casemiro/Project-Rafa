@@ -1,0 +1,12 @@
+
+/* Modal ver produto */
+
+.container-details span{
+  color: var(--corPrimaria);
+}
+
+table tbody tr td{
+  padding: .5rem;
+}
+
+
